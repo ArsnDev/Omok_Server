@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebAPI.Models;
-using SqlKata.Execution;
+using WebAPI.Repositories;
 using System.Threading.Tasks;
 using BCrypt.Net;
 
@@ -11,12 +11,12 @@ namespace WebAPI.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly QueryFactory _db;
+        private readonly IUserRepository _userRepository;
         private readonly ILogger<UsersController> _logger;
 
-        public UsersController(QueryFactory db, ILogger<UsersController> logger)
+        public UsersController(IUserRepository userRepository, ILogger<UsersController> logger)
         {
-            _db = db;
+            _userRepository = userRepository;
             _logger = logger;
         }
 
@@ -27,7 +27,7 @@ namespace WebAPI.Controllers
         {
             _logger.LogInformation("[회원가입] - Register, Username: {Username}", request.Username);
 
-            var existingUser = await _db.Query("Users").Where("Username", request.Username).FirstOrDefaultAsync();
+            var existingUser = await _userRepository.GetByUsernameAsync(request.Username);
             if (existingUser != null)
             {
                 _logger.LogWarning("[회원가입] - 이미 존재하는 아이디 Username : {Username}", request.Username);
@@ -35,19 +35,13 @@ namespace WebAPI.Controllers
             }
             var passwordHash = BCrypt.Net.BCrypt.HashPassword(request.Password);
 
-            try
+            var newUser = new User
             {
-                await _db.Query("Users").InsertAsync(new
-                {
-                    Username = request.Username,
-                    PasswordHash = passwordHash
-                });
-            }
-            catch (System.Exception ex)
-            {
-                _logger.LogError(ex, "[회원가입] - DB 저장 중 예외발생 Username : {Username}", request.Username);
-                return StatusCode(500, new { message = "서버 내부 오류 발생" });
-            }
+                Username = request.Username,
+                PasswordHash = passwordHash
+            };
+
+            await _userRepository.AddAsync(newUser);
 
             _logger.LogInformation("[회원가입] - 성공, Username : {Username}", request.Username);
             return Ok(new { message = "회원가입이 성공적으로 완료되었습니다." });

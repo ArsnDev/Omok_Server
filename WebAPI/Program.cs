@@ -4,6 +4,7 @@ using SqlKata.Execution;
 using System.Data;
 using ZLogger;
 using ZLogger.Providers;
+using WebAPI.Repositories;
 
 namespace WebAPI
 {
@@ -18,7 +19,7 @@ namespace WebAPI
             builder.Services.AddSingleton<Compiler, MySqlCompiler>();
             builder.Services.AddSingleton<QueryFactory>();
 
-            // ===== 로깅 설정 추가/수정 =====
+            // 로깅 설정 추가/수정
             builder.Logging.ClearProviders();
             builder.Logging.AddZLoggerConsole();
             builder.Logging.AddZLoggerRollingFile(options =>
@@ -29,8 +30,9 @@ namespace WebAPI
                 // 하루(Day) 단위로 파일을 새로 생성
                 options.RollingInterval = RollingInterval.Day;
             });
+            // Repository 등록
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
             // Add services to the container.
-
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
