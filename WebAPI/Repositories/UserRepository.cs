@@ -24,7 +24,8 @@ namespace WebAPI.Repositories
 
         public async Task<User?> GetByUsernameAsync(string username)
         {
-            return await _db.Query("Users").Where("Username", username).FirstOrDefaultAsync();
+            var result = await _db.Query("Users").Where("Username", username).FirstOrDefaultAsync<User>();
+            return result as User;
         }
     }
 }

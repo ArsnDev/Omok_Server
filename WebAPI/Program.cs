@@ -1,10 +1,13 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using MySql.Data.MySqlClient;
 using SqlKata.Compilers;
 using SqlKata.Execution;
 using System.Data;
+using System.Text;
+using WebAPI.Repositories;
 using ZLogger;
 using ZLogger.Providers;
-using WebAPI.Repositories;
 
 namespace WebAPI
 {
@@ -30,6 +33,21 @@ namespace WebAPI
                 // 하루(Day) 단위로 파일을 새로 생성
                 options.RollingInterval = RollingInterval.Day;
             });
+            // JWT 인증 서비스 등록
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                        ValidAudience = builder.Configuration["Jwt:Audience"],
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]))
+                    };
+                });
             // Repository 등록
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             // Add services to the container.
@@ -48,7 +66,7 @@ namespace WebAPI
             }
 
             app.UseHttpsRedirection();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
