@@ -56,6 +56,8 @@ namespace WebAPI
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             // AuthService µî·Ï
             builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IMatchRepository, MatchRepository>();
+            builder.Services.AddScoped<IGameService, GameService>();
             // Add services to the container.
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
