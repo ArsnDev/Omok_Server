@@ -27,10 +27,16 @@ namespace OmokServer.Services
             await _matchRepository.AddMatchAsync(newMatch);
             _logger.LogInformation("경기 결과 저장 성공. Winner: {WinnerId}, Loser: {LoserId}", winnerId, loserId);
         }
-        public async Task<IEnumerable<Match>> GetUserMatchHistoryAsync(int userId)
+        public async Task<IEnumerable<Match>?> GetUserMatchHistoryAsync(int requesterId, int targetUserId)
         {
-            _logger.LogInformation("전적 조회 서비스 호출. UserId: {UserId}", userId);
-            return await _matchRepository.GetMatchesByUserIdAsync(userId);
+            if (requesterId != targetUserId)
+            {
+                _logger.LogWarning("권한 없는 전적 조회 시도. Requester: {RequesterId}, Target: {TargetId}", requesterId, targetUserId);
+                return null;
+            }
+
+            _logger.LogInformation("전적 조회 서비스 호출. UserId: {UserId}", targetUserId);
+            return await _matchRepository.GetMatchesByUserIdAsync(targetUserId);
         }
     }
 }

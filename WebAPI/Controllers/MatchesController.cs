@@ -6,6 +6,7 @@ using Org.BouncyCastle.Asn1.Ocsp;
 using OmokServer.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Security.Claims;
 using OmokServer.Services;
 using ZLogger;
 
@@ -33,10 +34,21 @@ namespace OmokServer.Controllers
             return Ok(new { message = "경기 결과가 성공적으로 저장되었습니다." });
         }
         [HttpGet("history/{userId}")] // GET /api/matches/history/{userId}
-        public async Task<ActionResult<IEnumerable<Match>>> GetUserMatchHistory(int userId)
+        public async Task<IActionResult> GetUserMatchHistory(int userId)
         {
-            _logger.LogInformation("전적 조회 요청 수신. UserId: {UserId}", userId);
-            var matchHistory = await _gameService.GetUserMatchHistoryAsync(userId);
+            var requesterIdString = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            if (requesterIdString == null)
+            {
+                return Unauthorized();
+            }
+            var requesterId = int.Parse(requesterIdString);
+            _logger.LogInformation("전적 조회 요청 수신. Requester: {RequesterId}, Target: {TargetId}", requesterId, userId);
+            var matchHistory = await _gameService.GetUserMatchHistoryAsync(requesterId, userId);
+            if (matchHistory == null)
+            {
+                return Forbid();
+            }
+
             return Ok(matchHistory);
         }
     }
