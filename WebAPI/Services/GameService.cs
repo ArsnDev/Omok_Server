@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
-using WebAPI.Models;
-using WebAPI.Repositories;
+using OmokServer.Models;
+using OmokServer.Repositories;
 using System;
 using System.Threading.Tasks;
 
-namespace WebAPI.Services
+namespace OmokServer.Services
 {
     public class GameService : IGameService
     {

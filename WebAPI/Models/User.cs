@@ -1,4 +1,4 @@
-﻿namespace WebAPI.Models
+﻿namespace OmokServer.Models
 {
     public class User
     {

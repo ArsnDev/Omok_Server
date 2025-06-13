@@ -10,11 +10,11 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
-using WebAPI.Models;
-using WebAPI.Repositories;
-using WebAPI.Services;
+using OmokServer.Models;
+using OmokServer.Repositories;
+using OmokServer.Services;
 
-namespace WebAPI.Controllers
+namespace OmokServer.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WebAPI.Models;
+using OmokServer.Models;
 using SqlKata.Execution;
 using System.Threading.Tasks;
 
 
-namespace WebAPI.Controllers
+namespace OmokServer.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

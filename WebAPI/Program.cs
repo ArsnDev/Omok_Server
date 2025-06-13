@@ -6,12 +6,12 @@ using SqlKata.Compilers;
 using SqlKata.Execution;
 using System.Data;
 using System.Text;
-using WebAPI.Repositories;
-using WebAPI.Services;
+using OmokServer.Repositories;
+using OmokServer.Services;
 using ZLogger;
 using ZLogger.Providers;
 
-namespace WebAPI
+namespace OmokServer
 {
     public class Program
     {

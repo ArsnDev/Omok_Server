@@ -1,8 +1,8 @@
-﻿using WebAPI.Models;
+﻿using OmokServer.Models;
 using SqlKata.Execution;
 using System.Threading.Tasks;
 
-namespace WebAPI.Repositories
+namespace OmokServer.Repositories
 {
     public class UserRepository : IUserRepository
     {

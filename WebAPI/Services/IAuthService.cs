@@ -1,4 +1,4 @@
-﻿namespace WebAPI.Services
+﻿namespace OmokServer.Services
 {
     public interface IAuthService
     {

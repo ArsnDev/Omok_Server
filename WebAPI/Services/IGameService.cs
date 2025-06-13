@@ -1,7 +1,7 @@
-﻿using WebAPI.Models;
+﻿using OmokServer.Models;
 using System.Collections.Generic;
 
-namespace WebAPI.Services
+namespace OmokServer.Services
 {
     public interface IGameService
     {

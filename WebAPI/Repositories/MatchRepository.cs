@@ -1,10 +1,10 @@
-﻿using WebAPI.Models;
+﻿using OmokServer.Models;
 using SqlKata.Execution;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WebAPI.Repositories
+namespace OmokServer.Repositories
 {
     public class MatchRepository:IMatchRepository
     {

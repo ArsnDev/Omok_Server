@@ -3,13 +3,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Org.BouncyCastle.Asn1.Ocsp;
-using WebAPI.Models;
+using OmokServer.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using WebAPI.Services;
+using OmokServer.Services;
 using ZLogger;
 
-namespace WebAPI.Controllers
+namespace OmokServer.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

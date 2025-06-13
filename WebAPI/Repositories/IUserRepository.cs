@@ -1,7 +1,7 @@
-﻿using WebAPI.Models;
+﻿using OmokServer.Models;
 using System.Threading.Tasks;
 
-namespace WebAPI.Repositories
+namespace OmokServer.Repositories
 {
     public interface IUserRepository
     {

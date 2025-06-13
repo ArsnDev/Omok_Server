@@ -1,15 +1,15 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using WebAPI.Models;
-using WebAPI.Repositories;
+using OmokServer.Models;
+using OmokServer.Repositories;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebAPI.Services
+namespace OmokServer.Services
 {
     public class AuthService : IAuthService
     {

@@ -1,8 +1,8 @@
-﻿using WebAPI.Models;
+﻿using OmokServer.Models;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
-namespace WebAPI.Repositories
+namespace OmokServer.Repositories
 {
     public interface IMatchRepository
     {
