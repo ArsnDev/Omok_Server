@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
 using OmokServer.Models;
-using OmokServer.Repositories;
+using OmokServer.DTOs;
 using OmokServer.Services;
 
 namespace OmokServer.Controllers
@@ -20,57 +20,37 @@ namespace OmokServer.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly IUserRepository _userRepository;
         private readonly IAuthService _authService;
         private readonly ILogger<UsersController> _logger;
         
-        public UsersController(IUserRepository userRepository, IAuthService authService, ILogger<UsersController> logger)
+        public UsersController(IAuthService authService, ILogger<UsersController> logger)
         {
-            _userRepository = userRepository;
             _authService = authService;
             _logger = logger;
         }
-
-        public record RegisterRequest(string Username, string Password);
-
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterRequest request)
+        public async Task<IActionResult> Register([FromBody] RegisterRequestDto request)
         {
-            _logger.LogInformation("[회원가입] - Register, Username: {Username}", request.Username);
+            _logger.LogInformation("[컨트롤러] 회원가입 요청 수신: {Username}", request.Username);
+            var isSuccess = await _authService.RegisterAsync(request);
 
-            var existingUser = await _userRepository.GetByUsernameAsync(request.Username);
-            if (existingUser != null)
+            if (!isSuccess)
             {
-                _logger.LogWarning("[회원가입] - 이미 존재하는 아이디 Username : {Username}", request.Username);
                 return BadRequest(new { message = "이미 존재하는 아이디입니다." });
             }
-            var passwordHash = BCrypt.Net.BCrypt.HashPassword(request.Password);
-
-            var newUser = new User
-            {
-                Username = request.Username,
-                PasswordHash = passwordHash
-            };
-
-            await _userRepository.AddAsync(newUser);
-
-            _logger.LogInformation("[회원가입] - 성공, Username : {Username}", request.Username);
             return Ok(new { message = "회원가입이 성공적으로 완료되었습니다." });
         }
-        public record LoginRequest(string Username, string Password);
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequest request)
+        public async Task<IActionResult> Login([FromBody] LoginRequestDto request)
         {
-            _logger.LogInformation("[로그인] - 요청 시작, Username: {Username}", request.Username);
+            _logger.LogInformation("[컨트롤러] 로그인 요청 수신: {Username}", request.Username);
+            var tokenResponse = await _authService.LoginAsync(request);
 
-            var token = await _authService.LoginAsync(request.Username, request.Password);
-
-            if (token == null)
+            if (tokenResponse == null)
             {
                 return Unauthorized(new { message = "아이디 또는 비밀번호가 올바르지 않습니다." });
             }
-
-            return Ok(new { token });
+            return Ok(tokenResponse);
         }
         [HttpGet("me")]
         [Authorize]
@@ -79,14 +59,10 @@ namespace OmokServer.Controllers
             var userId = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
             var username = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name)?.Value;
 
-            if (userId == null || username == null)
-            {
-                return Unauthorized();
-            }
+            if (userId == null || username == null) return Unauthorized();
 
-            _logger.LogInformation("[내 정보] - {Username}({UserId}) 님이 정보 조회", username, userId);
-
-            return Ok(new { userId = int.Parse(userId), username });
+            var userDto = new UserDto(int.Parse(userId), username);
+            return Ok(userDto);
         }
     }
 }

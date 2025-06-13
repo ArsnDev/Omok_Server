@@ -1,6 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using OmokServer.DTOs;
 using OmokServer.Models;
 using OmokServer.Repositories;
 using System;
@@ -22,23 +24,39 @@ namespace OmokServer.Services
             _configuration = configuration;
             _logger = logger;
         }
-        public async Task<string?> LoginAsync(string username, string password)
+        public async Task<bool> RegisterAsync(RegisterRequestDto request)
         {
-            var user = await _userRepository.GetByUsernameAsync(username);
-            if (user == null)
+            var existingUser = await _userRepository.GetByUsernameAsync(request.Username);
+            if (existingUser == null)
             {
-                _logger.LogWarning("[로그인 서비스] - 존재하지 않는 아이디로 로그인 시도, Username: {Username}", username);
-                return null; // 사용자가 없음
+                _logger.LogWarning("[회원가입] - 이미 존재하는 아이디 Username : {Username}", request.Username);
+                return false;
+            }
+            var passwordHash = BCrypt.Net.BCrypt.HashPassword(request.Password);
+
+            var newUser = new User
+            {
+                Username = request.Username,
+                PasswordHash = passwordHash
+            };
+            await _userRepository.AddAsync(newUser);
+
+            _logger.LogInformation("[회원가입] - 성공, Username : {Username}", request.Username);
+            return true;
+        }
+        public async Task<TokenResponseDto?> LoginAsync(LoginRequestDto request)
+        {
+            var user = await _userRepository.GetByUsernameAsync(request.Username);
+            if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
+            {
+                _logger.LogWarning("[로그인 서비스] - 인증 실패, Username: {Username}", request.Username);
+                return null;
             }
 
-            if (!BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
-            {
-                _logger.LogWarning("[로그인 서비스] - 비밀번호 불일치, Username: {Username}", username);
-                return null; // 비밀번호 불일치
-            }
+            _logger.LogInformation("[로그인 서비스] - 로그인 성공, Username: {Username}", request.Username);
+            var tokenString = GenerateJwtToken(user);
 
-            _logger.LogInformation("[로그인 서비스] - 로그인 성공, Username: {Username}", username);
-            return GenerateJwtToken(user);
+            return new TokenResponseDto(tokenString);
         }
         private string GenerateJwtToken(User user)
         {
