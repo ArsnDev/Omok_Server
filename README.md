@@ -32,28 +32,10 @@ ASP.NET Core Web API와 SignalR을 사용하여 개발한 온라인 오목 게�
 - **Logging:** ZLogger
 - **Real-time Communication:** SignalR (예정)
 
-## 📝 개발 로그
-
-### 6월 11일
-- 프로젝트 초기 설정 및 DB(MySQL) 스키마 생성
-- SqlKata를 이용한 데이터베이스 연동 설정
-- `BCrypt`를 적용한 안전한 회원가입 API 구현
-- Repository 패턴을 적용하여 데이터 접근 로직 분리
-- `JWT` 발급을 포함한 로그인 API 구현
-
-### 6월 12일
-- Service 패턴을 도입하여 비즈니스 로직 분리
-- 경기 결과 저장(`POST /api/matches`) API 구현
-- 사용자 전적 조회(`GET /api/matches/history/{userId}`) API 구현
-
-### 6월 13일 (금요일)
-- 전체 아키텍처 및 구현 내용 리뷰
-- 실시간 게임 로직(SignalR, GameRoom) 구현 계획 수립
-
 ## 🚀 앞으로의 계획 (TODO)
 
 - [X] DTO 패턴을 적용하여 전체 구조 리팩토링
 - [ ] Refresh Token을 이용한 JWT 인증 시스템 고도화
-- [ ] SignalR 허브(Hub) 추가 및 실시간 통신 기반 마련
-- [ ] 인메모리 대기열을 이용한 매치메이킹 시스템 구현
+- [X] SignalR 허브(Hub) 추가 및 실시간 통신 기반 마련
+- [X] 인메모리 대기열을 이용한 매치메이킹 시스템 구현
 - [X] `GameRoom` 상태 관리 로직 구현 (게임 시작, 수 두기, 게임 종료)
