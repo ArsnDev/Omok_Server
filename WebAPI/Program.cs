@@ -56,8 +56,11 @@ namespace OmokServer
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             // AuthService 등록
             builder.Services.AddScoped<IAuthService, AuthService>();
+            // Match Repository 등록
             builder.Services.AddScoped<IMatchRepository, MatchRepository>();
+            // 인게임 서비스 등록
             builder.Services.AddScoped<IGameService, GameService>();
+            builder.Services.AddSingleton<GameRoomManager>();
             // Add services to the container.
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -99,7 +102,6 @@ namespace OmokServer
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -110,9 +112,7 @@ namespace OmokServer
             app.UseAuthentication();
             app.UseAuthorization();
 
-
             app.MapControllers();
-
             app.Run();
         }
     }

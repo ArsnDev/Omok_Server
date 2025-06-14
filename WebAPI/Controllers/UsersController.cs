@@ -11,8 +11,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
 using OmokServer.Models;
-using OmokServer.DTOs;
 using OmokServer.Services;
+using OmokServer.Models.DTOs;
 
 namespace OmokServer.Controllers
 {

@@ -1,4 +1,4 @@
-﻿using OmokServer.DTOs;
+﻿using OmokServer.Models.DTOs;
 using System.Threading.Tasks;
 
 namespace OmokServer.Services

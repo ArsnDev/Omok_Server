@@ -2,8 +2,8 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using OmokServer.DTOs;
 using OmokServer.Models;
+using OmokServer.Models.DTOs;
 using OmokServer.Repositories;
 using System;
 using System.IdentityModel.Tokens.Jwt;
