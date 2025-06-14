@@ -61,6 +61,10 @@ namespace OmokServer
             // 인게임 서비스 등록
             builder.Services.AddScoped<IGameService, GameService>();
             builder.Services.AddSingleton<GameRoomManager>();
+            builder.Services.AddSingleton<MatchmakingService>();
+            // SignalR 등록
+            builder.Services.AddSignalR();
+            builder.Services.AddSingleton<UserConnectionManager>();
             // Add services to the container.
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -113,6 +117,7 @@ namespace OmokServer
             app.UseAuthorization();
 
             app.MapControllers();
+            app.MapHub<OmokServer.Hubs.GameHub>("/gamehub");
             app.Run();
         }
     }
