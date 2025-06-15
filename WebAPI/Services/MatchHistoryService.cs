@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace OmokServer.Services
 {
-    public class GameService : IGameService
+    public class MatchHistoryService : IMatchHistoryService
     {
         private readonly IMatchRepository _matchRepository;
-        private readonly ILogger<GameService> _logger;
+        private readonly ILogger<MatchHistoryService> _logger;
 
-        public GameService(IMatchRepository matchRepository, ILogger<GameService> logger)
+        public MatchHistoryService(IMatchRepository matchRepository, ILogger<MatchHistoryService> logger)
         {
             _matchRepository = matchRepository;
             _logger = logger;

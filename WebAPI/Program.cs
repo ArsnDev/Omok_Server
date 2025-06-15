@@ -59,7 +59,7 @@ namespace OmokServer
             // Match Repository 등록
             builder.Services.AddScoped<IMatchRepository, MatchRepository>();
             // 인게임 서비스 등록
-            builder.Services.AddScoped<IGameService, GameService>();
+            builder.Services.AddScoped<IMatchHistoryService, MatchHistoryService>();
             builder.Services.AddSingleton<GameRoomManager>();
             builder.Services.AddSingleton<MatchmakingService>();
             // SignalR 등록

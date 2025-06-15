@@ -39,6 +39,39 @@ ASP.NET Core Web API와 SignalR을 사용하여 개발한 온라인 오목 게�
 -   **Security:** BCrypt.Net-Next (Password Hashing)
 -   **Logging:** ZLogger
 
+## 🔄 전체 흐름
+```mermaid
+graph TD
+    %% --- 초기 상태 및 인증 ---
+    Start([시작]) --> LoginScreen[클라이언트: 로그인/회원가입 UI];
+    LoginScreen --> AttemptLogin[클라이언트: ID/PW 입력 후 '로그인' 요청];
+    AttemptLogin -- HTTP POST /api/users/login --> ServerAuth[서버 : 사용자 인증 처리];
+    ServerAuth --> AuthCheck{로그인 성공?};
+    AuthCheck -- JWT 발급 -->|예| Lobby[클라이언트: 로비 진입, 토큰 저장, SignalR 연결 및 등록];
+    AuthCheck -- 401 에러 -->|아니요| LoginScreen;
+
+    %% --- 매치메이킹 ---
+    Lobby --> ReqMatch[클라이언트: '게임 찾기' 버튼 클릭];
+    ReqMatch -- HTTP POST /api/matchmaking/queue --> ServerQueue[서버: MatchmakingService 대기열에 추가];
+    ServerQueue --> ClientWait[클라이언트: '매칭 대기 중...' UI 표시];
+    ClientWait --> ServerNotifyMatch{서버: 매칭 성공 알림};
+    ServerNotifyMatch -- SignalR 'MatchFound' --> GameScreen[클라이언트: 알림 수신 후 게임 씬으로 전환];
+
+    %% --- 인게임 플레이 루프 ---
+    GameScreen --> PlaceStone[클라이언트: 오목돌 놓기];
+    PlaceStone -- SignalR 'PlaceStone' 메시지 전송 --> ServerProcessMove[서버: GameHub에서 수신 및 GameRoom 상태 업데이트];
+    ServerProcessMove --> ServerBroadcastMove[서버: 양쪽 클라이언트에게 'StonePlaced' 메시지 전파];
+    ServerBroadcastMove -- SignalR 'StonePlaced' 수신 --> GameScreen;
+    ServerProcessMove --> GameOverCheck{게임 종료?};
+    GameOverCheck -->|아니요| GameScreen;
+
+    %% --- 게임 종료 처리 ---
+    GameOverCheck -->|예| ServerEndGame[서버: DB에 결과 저장 및 'GameOver' 알림 전파];
+    ServerEndGame -- SignalR 'GameOver' 수신 --> ResultScreen[클라이언트: 결과 화면 표시];
+    ResultScreen --> Lobby;
+
+```
+
 ## 🚀 앞으로의 계획 (TODO)
 
 -   [ ] Refresh Token을 이용한 JWT 인증 시스템 고도화

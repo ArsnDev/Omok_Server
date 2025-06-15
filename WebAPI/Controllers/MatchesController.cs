@@ -17,10 +17,10 @@ namespace OmokServer.Controllers
     [Authorize]
     public class MatchesController : ControllerBase
     {
-        private readonly IGameService _gameService;
+        private readonly IMatchHistoryService _gameService;
         private readonly ILogger<MatchesController> _logger;
 
-        public MatchesController(IGameService gameService, ILogger<MatchesController> logger)
+        public MatchesController(IMatchHistoryService gameService, ILogger<MatchesController> logger)
         {
             _gameService = gameService;
             _logger = logger;
