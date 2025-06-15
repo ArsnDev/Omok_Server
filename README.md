@@ -42,28 +42,25 @@ ASP.NET Core Web API와 SignalR을 사용하여 개발한 온라인 오목 게�
 ## 🔄 전체 흐름
 
 ```mermaid
-graph LR
+graph TD
     subgraph "1. 인증 (Authentication)"
-        direction LR
         A([시작]) --> B[로그인/회원가입 UI];
         B --> C[ID/PW 입력 후 로그인 요청];
         C -- "HTTP POST" --> D[서버: 사용자 인증];
-        D --> E{성공?};
-        E -- "Yes (JWT)" --> F[로비 진입 및 SignalR 연결];
-        E -- "No (401)" --> B;
+        D --> E{로그인 성공?};
+        E -->|예 (JWT 발급)| F[로비 진입 및 SignalR 연결];
+        E -->|아니요 (401 에러)| B;
     end
 
     subgraph "2. 매치메이킹 (Matchmaking)"
-        direction LR
         F --> G['게임 찾기' 버튼 클릭];
-        G -- "HTTP POST" --> H[서버: 대기열 추가];
+        G -- "HTTP POST" --> H[서버: 대기열 추가 및 매칭 시도];
         H --> I['매칭 대기 중...' UI];
-        I -. "SignalR 대기" .-> J{매칭 성공?};
+        I -.-> J{매칭 성공 알림 수신};
     end
     
-    subgraph "3. 인게임 (In-Game Loop)"
-        direction TD
-        J -- "'MatchFound' 수신" --> K[게임 씬 전환];
+    subgraph "3. 인게임 (In-Game)"
+        J -- "'MatchFound' 메시지" --> K[게임 씬 전환];
         K --> L[오목돌 놓기];
         L -- "SignalR 'PlaceStone'" --> M[서버: 수 검증/처리];
         M -- "'StonePlaced' 전파" --> K;
@@ -72,13 +69,11 @@ graph LR
     end
 
     subgraph "4. 게임 종료 (Game End)"
-        direction LR
         O -- "Yes" --> P[서버: 결과 저장/알림];
         P -- "'GameOver' 수신" --> Q[결과 화면 표시];
         Q --> F;
     end
 ```
-
 ## 🚀 앞으로의 계획 (TODO)
 
 -   [ ] Refresh Token을 이용한 JWT 인증 시스템 고도화
