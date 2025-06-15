@@ -43,37 +43,30 @@ ASP.NET Core Web API와 SignalR을 사용하여 개발한 온라인 오목 게�
 
 ```mermaid
 graph TD
-    subgraph "1. 인증 (Authentication)"
-        A([시작]) --> B[로그인/회원가입 UI];
-        B --> C[ID/PW 입력 후 로그인 요청];
-        C -- "HTTP POST" --> D[서버: 사용자 인증];
-        D --> E{로그인 성공?};
-        E -->|예 (JWT 발급)| F[로비 진입 및 SignalR 연결];
-        E -->|아니요 (401 에러)| B;
-    end
-
-    subgraph "2. 매치메이킹 (Matchmaking)"
-        F --> G['게임 찾기' 버튼 클릭];
-        G -- "HTTP POST" --> H[서버: 대기열 추가 및 매칭 시도];
-        H --> I['매칭 대기 중...' UI];
-        I -.-> J{매칭 성공 알림 수신};
-    end
+    A["시작 (Start)"] --> B["클라이언트: 로그인/회원가입 UI"];
+    B --> C["클라이언트: ID/PW 입력 후 로그인 요청"];
+    C -- "HTTP POST /api/users/login" --> D["서버: 사용자 인증 처리"];
+    D --> E{"로그인 성공?"};
+    E -- "Yes" --> F["클라이언트: 로비 진입, 토큰 저장,<br/>SignalR 연결 및 등록"];
+    E -- "No" --> B;
     
-    subgraph "3. 인게임 (In-Game)"
-        J -- "'MatchFound' 메시지" --> K[게임 씬 전환];
-        K --> L[오목돌 놓기];
-        L -- "SignalR 'PlaceStone'" --> M[서버: 수 검증/처리];
-        M -- "'StonePlaced' 전파" --> K;
-        M --> O{게임 종료?};
-        O -- "No" --> K;
-    end
-
-    subgraph "4. 게임 종료 (Game End)"
-        O -- "Yes" --> P[서버: 결과 저장/알림];
-        P -- "'GameOver' 수신" --> Q[결과 화면 표시];
-        Q --> F;
-    end
+    F --> G["클라이언트: '게임 찾기' 버튼 클릭"];
+    G -- "HTTP POST /api/matchmaking/queue" --> H["서버: MatchmakingService 대기열에 추가"];
+    H --> I["클라이언트: '매칭 대기 중...' UI 표시"];
+    I -.-> J["서버: 매칭 성공 및<br/>'MatchFound' 알림 전송"];
+    J -- "SignalR 수신" --> K["클라이언트: 게임 씬으로 전환"];
+    
+    K --> L["클라이언트: 오목돌 놓기"];
+    L -- "SignalR 'PlaceStone'" --> M["서버: GameHub에서 수신 및<br/>게임 상태 업데이트"];
+    M --> N["서버: 양쪽 클라이언트에<br/>'StonePlaced' 전파"];
+    N -- "SignalR 수신" --> K;
+    M --> O{"게임 종료?"};
+    O -- "No" --> K;
+    O -- "Yes" --> P["서버: DB에 결과 저장 및<br/>'GameOver' 알림 전파"];
+    P -- "SignalR 수신" --> Q["클라이언트: 결과 화면 표시"];
+    Q --> F;
 ```
+
 ## 🚀 앞으로의 계획 (TODO)
 
 -   [ ] Refresh Token을 이용한 JWT 인증 시스템 고도화
