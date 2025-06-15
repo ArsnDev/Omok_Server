@@ -40,12 +40,13 @@ ASP.NET Core Web API와 SignalR을 사용하여 개발한 온라인 오목 게�
 -   **Logging:** ZLogger
 
 ## 🔄 전체 흐름
+
 ```mermaid
 graph TD
     %% --- 초기 상태 및 인증 ---
     Start([시작]) --> LoginScreen[클라이언트: 로그인/회원가입 UI];
     LoginScreen --> AttemptLogin[클라이언트: ID/PW 입력 후 '로그인' 요청];
-    AttemptLogin -- HTTP POST /api/users/login --> ServerAuth[서버 : 사용자 인증 처리];
+    AttemptLogin -- HTTP POST /api/users/login --> ServerAuth[서버: 사용자 인증 처리];
     ServerAuth --> AuthCheck{로그인 성공?};
     AuthCheck -- JWT 발급 -->|예| Lobby[클라이언트: 로비 진입, 토큰 저장, SignalR 연결 및 등록];
     AuthCheck -- 401 에러 -->|아니요| LoginScreen;
