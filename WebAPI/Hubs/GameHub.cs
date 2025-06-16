@@ -5,9 +5,13 @@ using OmokServer.Services;
 using System;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using ZLogger;
 
 namespace OmokServer.Hubs
 {
+    /// <summary>
+    /// 실시간 게임 통신을 위한 SignalR 허브
+    /// </summary>
     public class GameHub : Hub
     {
         private readonly UserConnectionManager _userConnectionManager;
@@ -26,19 +30,33 @@ namespace OmokServer.Hubs
             _logger = logger;
         }
 
+        /// <summary>
+        /// 사용자를 연결 관리자에 등록합니다.
+        /// </summary>
+        /// <param name="userId">등록할 사용자 ID</param>
         public void Register(int userId)
         {
             _userConnectionManager.AddConnection(userId, Context.ConnectionId);
-            _logger.LogInformation("유저 등록됨. UserId: {UserId}, ConnectionId: {ConnectionId}", userId, Context.ConnectionId);
+            _logger.ZLogInformation($"유저 등록됨. UserId: {userId}, ConnectionId: {Context.ConnectionId}");
         }
 
+        /// <summary>
+        /// 사용자 연결이 해제될 때 호출됩니다.
+        /// </summary>
+        /// <param name="exception">연결 해제 예외 (있는 경우)</param>
         public override async Task OnDisconnectedAsync(Exception? exception)
         {
-            _logger.LogInformation("유저 접속 해제. ConnectionId: {ConnectionId}", Context.ConnectionId);
+            _logger.ZLogInformation($"유저 접속 해제. ConnectionId: {Context.ConnectionId}");
             _userConnectionManager.RemoveConnectionByConnectionId(Context.ConnectionId);
             await base.OnDisconnectedAsync(exception);
         }
 
+        /// <summary>
+        /// 게임 보드에 돌을 놓습니다.
+        /// </summary>
+        /// <param name="roomId">게임방 ID</param>
+        /// <param name="x">X 좌표</param>
+        /// <param name="y">Y 좌표</param>
         [Authorize]
         public async Task PlaceStone(string roomId, int x, int y)
         {
@@ -62,14 +80,14 @@ namespace OmokServer.Hubs
             }
 
             await Clients.Group(roomId).SendAsync("StonePlaced", userId, x, y);
-            _logger.LogInformation("StonePlaced 전송. RoomId: {RoomId}, UserId: {UserId}", roomId, userId);
+            _logger.ZLogInformation($"StonePlaced 전송. RoomId: {roomId}, UserId: {userId}");
 
             if (room.Status == GameStatus.Finished)
             {
                 var winner = (room.Player1.UserId == userId) ? room.Player1 : room.Player2;
                 var loser = (room.Player1.UserId != userId) ? room.Player1 : room.Player2;
 
-                _logger.LogInformation("게임 종료! RoomId: {RoomId}, Winner: {Winner}", roomId, winner.Username);
+                _logger.ZLogInformation($"게임 종료! RoomId: {roomId}, Winner: {winner.Username}");
 
                 await _matchHistoryService.CreateMatchAsync(winner.UserId, loser.UserId);
 

@@ -13,31 +13,34 @@ using ZLogger.Providers;
 
 namespace OmokServer
 {
+    /// <summary>
+    /// ì• í”Œë¦¬ì¼€ì´ì…˜ì˜ ì§„ì…ì 
+    /// </summary>
     public class Program
     {
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // SqlKata QueryFactory µî·Ï
+            // SqlKata QueryFactory ì„¤ì •
             builder.Services.AddSingleton<IDbConnection>(o => new MySqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")));
             builder.Services.AddSingleton<Compiler, MySqlCompiler>();
             builder.Services.AddSingleton<QueryFactory>();
-            // OpenAPI ¼­ºñ½º µî·Ï
+            // OpenAPI ì„¤ì •
             builder.Services.AddEndpointsApiExplorer();
 
-            // ·Î±ë ¼³Á¤ Ãß°¡/¼öÁ¤
+            // ë¡œê¹… ì„¤ì •
             builder.Logging.ClearProviders();
             builder.Logging.AddZLoggerConsole();
             builder.Logging.AddZLoggerRollingFile(options =>
             {
-                // ·Î±× ÆÄÀÏ ÀÌ¸§ ±ÔÄ¢: logs/2025-06-11_000.log Çü½Ä
+                // ë¡œê·¸ íŒŒì¼ ì´ë¦„ í˜•ì‹: logs/2025-06-11_000.log í˜•ì‹
                 options.FilePathSelector = (timestamp, sequenceNo) => $"logs/{timestamp.ToLocalTime():yyyy-MM-dd}_{sequenceNo:000}.log";
 
-                // ÇÏ·ç(Day) ´ÜÀ§·Î ÆÄÀÏÀ» »õ·Î »ı¼º
+                // ì¼(Day) ë‹¨ìœ„ë¡œ ë¡œê·¸ íŒŒì¼ ìƒì„±
                 options.RollingInterval = RollingInterval.Day;
             });
-            // JWT ÀÎÁõ ¼­ºñ½º µî·Ï
+            // JWT ì¸ì¦ ì„¤ì •
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -52,17 +55,17 @@ namespace OmokServer
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]))
                     };
                 });
-            // Repository µî·Ï
+            // Repository ë“±ë¡
             builder.Services.AddScoped<IUserRepository, UserRepository>();
-            // AuthService µî·Ï
+            // AuthService ë“±ë¡
             builder.Services.AddScoped<IAuthService, AuthService>();
-            // Match Repository µî·Ï
+            // Match Repository ë“±ë¡
             builder.Services.AddScoped<IMatchRepository, MatchRepository>();
-            // ÀÎ°ÔÀÓ ¼­ºñ½º µî·Ï
+            // ë§¤ì¹­ ì„œë¹„ìŠ¤ ë“±ë¡
             builder.Services.AddScoped<IMatchHistoryService, MatchHistoryService>();
             builder.Services.AddSingleton<GameRoomManager>();
             builder.Services.AddSingleton<MatchmakingService>();
-            // SignalR µî·Ï
+            // SignalR ì„¤ì •
             builder.Services.AddSignalR();
             builder.Services.AddSingleton<UserConnectionManager>();
             // Add services to the container.
@@ -71,10 +74,10 @@ namespace OmokServer
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(options =>
             {
-                // Swagger ¹®¼­ÀÇ Á¦¸ñ, ¹öÀü µî Á¤º¸¸¦ ¼³Á¤ÇÕ´Ï´Ù.
+                // Swagger ë¬¸ì„œ ì„¤ì •
                 options.SwaggerDoc("v1", new OpenApiInfo { Title = "Omok Server API", Version = "v1" });
 
-                // 1. "Authorize" ¹öÆ°À» ¸¸µé±â À§ÇÑ ¼³Á¤ÀÔ´Ï´Ù.
+                // JWT ì¸ì¦ ì„¤ì •
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Name = "Authorization",
@@ -87,7 +90,7 @@ namespace OmokServer
                                   "Example: \"Bearer 12345abcdef\""
                 });
 
-                // 2. À§¿¡¼­ Á¤ÀÇÇÑ "Bearer" ÀÎÁõÀ» »ç¿ëÇÏµµ·Ï ¼³Á¤ÇÏ°í, ÀÚ¹°¼è ¾ÆÀÌÄÜÀ» Ç¥½ÃÇÕ´Ï´Ù.
+                // ë³´ì•ˆ ìš”êµ¬ì‚¬í•­ ì„¤ì •
                 options.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
                     {
@@ -106,16 +109,19 @@ namespace OmokServer
 
             var app = builder.Build();
 
+            // ê°œë°œ í™˜ê²½ì—ì„œ Swagger UI í™œì„±í™”
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
 
+            // ë¯¸ë“¤ì›¨ì–´ ì„¤ì •
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
 
+            // ì—”ë“œí¬ì¸íŠ¸ ì„¤ì •
             app.MapControllers();
             app.MapHub<OmokServer.Hubs.GameHub>("/gamehub");
             app.Run();

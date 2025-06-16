@@ -1,0 +1,14 @@
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+[컨트롤러] 로그인 요청 수신: hihi
+[로그인 서비스] - 로그인 성공, Username: hihi
+[컨트롤러] 로그인 요청 수신: bi
+[로그인 서비스] - 로그인 성공, Username: bi
+[매칭 컨트롤러] - 요청 수신. UserId: 4
+유저 4가 대기열에 추가되었습니다. 현재 대기인원: 1
+[매칭 컨트롤러] - 요청 수신. UserId: 3
+유저 3가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭되었으나 상대방이 오프라인 상태입니다. 매칭을 취소합니다.

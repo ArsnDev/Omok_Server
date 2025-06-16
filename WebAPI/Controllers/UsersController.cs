@@ -13,9 +13,13 @@ using System.Linq;
 using OmokServer.Models;
 using OmokServer.Services;
 using OmokServer.Models.DTOs;
+using ZLogger;
 
 namespace OmokServer.Controllers
 {
+    /// <summary>
+    /// 사용자 인증(회원가입, 로그인) 및 정보 조회를 담당하는 컨트롤러
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -28,10 +32,16 @@ namespace OmokServer.Controllers
             _authService = authService;
             _logger = logger;
         }
+
+        /// <summary>
+        /// 새로운 사용자를 등록합니다.
+        /// </summary>
+        /// <param name="request">회원가입 요청 정보</param>
+        /// <returns>회원가입 결과</returns>
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequestDto request)
         {
-            _logger.LogInformation("[컨트롤러] 회원가입 요청 수신: {Username}", request.Username);
+            _logger.ZLogInformation($"[컨트롤러] 회원가입 요청 수신: {request.Username}");
             var isSuccess = await _authService.RegisterAsync(request);
 
             if (!isSuccess)
@@ -40,10 +50,16 @@ namespace OmokServer.Controllers
             }
             return Ok(new { message = "회원가입이 성공적으로 완료되었습니다." });
         }
+
+        /// <summary>
+        /// 사용자 로그인을 처리합니다.
+        /// </summary>
+        /// <param name="request">로그인 요청 정보</param>
+        /// <returns>JWT 토큰이 포함된 로그인 결과</returns>
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequestDto request)
         {
-            _logger.LogInformation("[컨트롤러] 로그인 요청 수신: {Username}", request.Username);
+            _logger.ZLogInformation($"[컨트롤러] 로그인 요청 수신: {request.Username}");
             var tokenResponse = await _authService.LoginAsync(request);
 
             if (tokenResponse == null)
@@ -52,6 +68,11 @@ namespace OmokServer.Controllers
             }
             return Ok(tokenResponse);
         }
+
+        /// <summary>
+        /// 현재 로그인한 사용자의 정보를 조회합니다.
+        /// </summary>
+        /// <returns>사용자 정보</returns>
         [HttpGet("me")]
         [Authorize]
         public IActionResult GetMyInfo()

@@ -71,3 +71,4 @@ graph TD
 
 -   [ ] Refresh Token을 이용한 JWT 인증 시스템 고도화
 -   [ ] Unity 클라이언트 구현 (API 및 SignalR 연동, 게임 UI/UX)
+-   [ ] 중복 로그인 방지 시스템 구현 (UserSessionManager를 통한 단일 세션 관리)

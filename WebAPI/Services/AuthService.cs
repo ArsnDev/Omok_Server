@@ -10,20 +10,31 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using ZLogger;
 
 namespace OmokServer.Services
 {
+    /// <summary>
+    /// 사용자 인증 서비스
+    /// </summary>
     public class AuthService : IAuthService
     {
         private readonly IUserRepository _userRepository;
         private readonly IConfiguration _configuration;
         private readonly ILogger<AuthService> _logger;
+
         public AuthService(IUserRepository userRepository, IConfiguration configuration, ILogger<AuthService> logger)
         {
             _userRepository = userRepository;
             _configuration = configuration;
             _logger = logger;
         }
+
+        /// <summary>
+        /// 새로운 사용자를 등록합니다.
+        /// </summary>
+        /// <param name="request">회원가입 요청 정보</param>
+        /// <returns>등록 성공 여부</returns>
         public async Task<bool> RegisterAsync(RegisterRequestDto request)
         {
             var existingUser = await _userRepository.GetByUsernameAsync(request.Username);
@@ -41,9 +52,15 @@ namespace OmokServer.Services
             };
             await _userRepository.AddAsync(newUser);
 
-            _logger.LogInformation("[회원가입] - 성공, Username : {Username}", request.Username);
+            _logger.ZLogInformation($"[회원가입] - 성공, Username : {request.Username}");
             return true;
         }
+
+        /// <summary>
+        /// 사용자 로그인을 처리하고 JWT 토큰을 생성합니다.
+        /// </summary>
+        /// <param name="request">로그인 요청 정보</param>
+        /// <returns>JWT 토큰이 포함된 응답</returns>
         public async Task<TokenResponseDto?> LoginAsync(LoginRequestDto request)
         {
             var user = await _userRepository.GetByUsernameAsync(request.Username);
@@ -53,11 +70,17 @@ namespace OmokServer.Services
                 return null;
             }
 
-            _logger.LogInformation("[로그인 서비스] - 로그인 성공, Username: {Username}", request.Username);
+            _logger.ZLogInformation($"[로그인 서비스] - 로그인 성공, Username: {request.Username}");
             var tokenString = GenerateJwtToken(user);
 
             return new TokenResponseDto(tokenString);
         }
+
+        /// <summary>
+        /// JWT 토큰을 생성합니다.
+        /// </summary>
+        /// <param name="user">토큰을 생성할 사용자 정보</param>
+        /// <returns>생성된 JWT 토큰 문자열</returns>
         private string GenerateJwtToken(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();

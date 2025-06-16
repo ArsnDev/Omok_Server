@@ -3,9 +3,13 @@ using OmokServer.Models;
 using OmokServer.Repositories;
 using System;
 using System.Threading.Tasks;
+using ZLogger;
 
 namespace OmokServer.Services
 {
+    /// <summary>
+    /// 경기 결과 저장 및 전적 조회 서비스
+    /// </summary>
     public class MatchHistoryService : IMatchHistoryService
     {
         private readonly IMatchRepository _matchRepository;
@@ -16,6 +20,12 @@ namespace OmokServer.Services
             _matchRepository = matchRepository;
             _logger = logger;
         }
+
+        /// <summary>
+        /// 새로운 경기 결과를 저장합니다.
+        /// </summary>
+        /// <param name="winnerId">승자 ID</param>
+        /// <param name="loserId">패자 ID</param>
         public async Task CreateMatchAsync(int winnerId, int loserId)
         {
             var newMatch = new Match
@@ -25,8 +35,15 @@ namespace OmokServer.Services
                 MatchDate = DateTime.UtcNow,
             };
             await _matchRepository.AddMatchAsync(newMatch);
-            _logger.LogInformation("경기 결과 저장 성공. Winner: {WinnerId}, Loser: {LoserId}", winnerId, loserId);
+            _logger.ZLogInformation($"경기 결과 저장 성공. Winner: {winnerId}, Loser: {loserId}");
         }
+
+        /// <summary>
+        /// 특정 사용자의 경기 전적을 조회합니다.
+        /// </summary>
+        /// <param name="requesterId">요청자 ID</param>
+        /// <param name="targetUserId">조회할 사용자 ID</param>
+        /// <returns>경기 전적 목록</returns>
         public async Task<IEnumerable<Match>?> GetUserMatchHistoryAsync(int requesterId, int targetUserId)
         {
             if (requesterId != targetUserId)
@@ -35,7 +52,7 @@ namespace OmokServer.Services
                 return null;
             }
 
-            _logger.LogInformation("전적 조회 서비스 호출. UserId: {UserId}", targetUserId);
+            _logger.ZLogInformation($"전적 조회 서비스 호출. UserId: {targetUserId}");
             return await _matchRepository.GetMatchesByUserIdAsync(targetUserId);
         }
     }
