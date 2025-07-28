@@ -56,14 +56,17 @@
         {
             if(playerId != TurnOwnerPlayerId)
             {
+                Console.WriteLine($"PlaceStone 실패: 잘못된 차례. playerId={playerId}, TurnOwner={TurnOwnerPlayerId}");
                 return false;
             }
             if(x < 0 || y < 0 || y >= _boardHeight || x >= _boardWidth)
             {
+                Console.WriteLine($"PlaceStone 실패: 잘못된 좌표. x={x}, y={y}, boardSize={_boardWidth}x{_boardHeight}");
                 return false; 
             }
             if (_board[y, x] != 0)
             {
+                Console.WriteLine($"PlaceStone 실패: 이미 돌이 있음. x={x}, y={y}, value={_board[y, x]}");
                 return false;
             }
             int playerNumber = (playerId == Player1.UserId) ? 1 : 2;
@@ -77,6 +80,24 @@
                 TurnOwnerPlayerId = (TurnOwnerPlayerId == Player1.UserId) ? Player2.UserId : Player1.UserId;
             }
             return true;
+        }
+
+        /// <summary>
+        /// 현재 게임 보드 상태를 반환합니다.
+        /// </summary>
+        /// <returns>19x19 보드 배열 (JSON 직렬화 가능한 형태)</returns>
+        public int[][] GetBoard()
+        {
+            var result = new int[_boardHeight][];
+            for (int i = 0; i < _boardHeight; i++)
+            {
+                result[i] = new int[_boardWidth];
+                for (int j = 0; j < _boardWidth; j++)
+                {
+                    result[i][j] = _board[i, j];
+                }
+            }
+            return result;
         }
 
         /// <summary>

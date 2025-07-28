@@ -1,0 +1,849 @@
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+[컨트롤러] 회원가입 요청 수신: hihihi
+[회원가입] - 이미 존재하는 아이디 Username : hihihi
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+유저 등록됨. UserId: 13, ConnectionId: 5umGqtvJ-Py9DXEU-lRSPQ
+[매칭 컨트롤러] - 요청 수신. UserId: 13
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+유저 등록됨. UserId: 13, ConnectionId: uYme2EnaDh8xpcX2XtNbvg
+유저 접속 해제. ConnectionId: uYme2EnaDh8xpcX2XtNbvg
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: OsyxgGAH6870n95xhD2gAQ
+[매칭 컨트롤러] - 요청 수신. UserId: 17
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭되었으나 상대방이 오프라인 상태입니다. 매칭을 취소합니다.
+유저 접속 해제. ConnectionId: OsyxgGAH6870n95xhD2gAQ
+유저 접속 해제. ConnectionId: 5umGqtvJ-Py9DXEU-lRSPQ
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+유저 등록됨. UserId: 17, ConnectionId: XbbJJqnJYW8OEsueX8FPlg
+유저 등록됨. UserId: 17, ConnectionId: tz5bjhQkp3_FuN6jS6EfBw
+유저 접속 해제. ConnectionId: tz5bjhQkp3_FuN6jS6EfBw
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: idQOgzRS0xrQuwyflw-9qA
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[13]}
+유저 13는 이미 대기열에 있습니다.
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+유저 접속 해제. ConnectionId: XbbJJqnJYW8OEsueX8FPlg
+유저 접속 해제. ConnectionId: idQOgzRS0xrQuwyflw-9qA
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+유저 등록됨. UserId: 13, ConnectionId: jM4BQ9dQ05pVHdyfWgbFWA
+유저 접속 해제. ConnectionId: jM4BQ9dQ05pVHdyfWgbFWA
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: Z5Mr921J3cWAQ04ZYPDTvg
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: TwgpTSbXx153Qanxx4SdbQ
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[17]}
+유저 17는 이미 대기열에 있습니다.
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+유저 접속 해제. ConnectionId: Z5Mr921J3cWAQ04ZYPDTvg
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+유저 등록됨. UserId: 17, ConnectionId: Dhuwo4dfTtbjtE0DWnH_gw
+유저 접속 해제. ConnectionId: Dhuwo4dfTtbjtE0DWnH_gw
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: bEEpxOEEUnYlKZ1-OKOBUg
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: oi8BYAsdP5to-EV0cwK4zA
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[13]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 13, Player2: 17
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 13, P2: 17
+매칭 성공! RoomId: a9e3591655074c1c9627a9a4f8e5debf, P1: 13, P2: 17
+유저 접속 해제. ConnectionId: bEEpxOEEUnYlKZ1-OKOBUg
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+유저 등록됨. UserId: 17, ConnectionId: 8HiCsMNVuUZSlxBjTN7ExQ
+유저 등록됨. UserId: 17, ConnectionId: 1jbtzw6SGo5fyQ6pq86Huw
+유저 접속 해제. ConnectionId: 1jbtzw6SGo5fyQ6pq86Huw
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: UpUfmsrA4rMnJLLEMd5gjw
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[13]}
+유저 13는 이미 대기열에 있습니다.
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+유저 접속 해제. ConnectionId: 8HiCsMNVuUZSlxBjTN7ExQ
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: xDKNFahkhbZOsvUWmlU_2g
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[13]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 13, Player2: 17
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 13, P2: 17
+매칭 성공! RoomId: 8a68b9c1642a487ca0b9c1ed6cc46d65, P1: 13, P2: 17
+유저 접속 해제. ConnectionId: xDKNFahkhbZOsvUWmlU_2g
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+유저 접속 해제. ConnectionId: UpUfmsrA4rMnJLLEMd5gjw
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+유저 등록됨. UserId: 17, ConnectionId: _YDt3VvGOg5_4RY4_XtuUQ
+유저 접속 해제. ConnectionId: _YDt3VvGOg5_4RY4_XtuUQ
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: lEESVJ4FqStLNOd6K_GM-A
+유저 등록됨. UserId: 13, ConnectionId: BMIUoF-wyo3fkWShWwkCCQ
+유저 접속 해제. ConnectionId: BMIUoF-wyo3fkWShWwkCCQ
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+유저 접속 해제. ConnectionId: lEESVJ4FqStLNOd6K_GM-A
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: czLkw_hEotZ_U5zOxB2GAw
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: jIs1xrV3B9S8C29ZcHIC-w
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[13]}
+유저 13는 이미 대기열에 있습니다.
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+유저 접속 해제. ConnectionId: jIs1xrV3B9S8C29ZcHIC-w
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+유저 접속 해제. ConnectionId: czLkw_hEotZ_U5zOxB2GAw
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5043: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: 각 소켓 주소(프로토콜/네트워크 주소/포트)는 하나만 사용할 수 있습니다.
+ ---> System.Net.Sockets.SocketException: 각 소켓 주소(프로토콜/네트워크 주소/포트)는 하나만 사용할 수 있습니다.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5043: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: 각 소켓 주소(프로토콜/네트워크 주소/포트)는 하나만 사용할 수 있습니다.
+ ---> System.Net.Sockets.SocketException: 각 소켓 주소(프로토콜/네트워크 주소/포트)는 하나만 사용할 수 있습니다.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5043: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: 각 소켓 주소(프로토콜/네트워크 주소/포트)는 하나만 사용할 수 있습니다.
+ ---> System.Net.Sockets.SocketException: 각 소켓 주소(프로토콜/네트워크 주소/포트)는 하나만 사용할 수 있습니다.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: tF7iiKNOBcuopmcfTnNtQw
+유저 등록됨. UserId: 13, ConnectionId: MnGhh8mTp0LPPTwmWy2dkw
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[13]}
+유저 13는 이미 대기열에 있습니다.
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+유저 접속 해제. ConnectionId: tF7iiKNOBcuopmcfTnNtQw
+유저 접속 해제. ConnectionId: MnGhh8mTp0LPPTwmWy2dkw
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: Rgb6gOEVEgJ0L-Oalky2Tg
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: tsu5psWzKbCTMC9t0DDV3w
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 13, Player2: 13
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 13, P2: 13
+매칭 성공! RoomId: be4b28b91a8e4616bf1edf6d58d09701, P1: 13, P2: 13
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+유저 접속 해제. ConnectionId: Rgb6gOEVEgJ0L-Oalky2Tg
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+유저 접속 해제. ConnectionId: tsu5psWzKbCTMC9t0DDV3w
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: n_LBIMulcbKJdFvWDMV9eg
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: LCO-ovvHe10u6CzjS4PjaA
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 17, Player2: 13
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 17, P2: 13
+매칭 성공! RoomId: 5362149aaca64ec8b14f62af625f6235, P1: 17, P2: 13
+유저 접속 해제. ConnectionId: n_LBIMulcbKJdFvWDMV9eg
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+유저 접속 해제. ConnectionId: LCO-ovvHe10u6CzjS4PjaA
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: x_hD__wMeNr6TQqIROYVYw
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: qKBEUlv3E4UDH-GneEOJnw
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[17]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 17, Player2: 13
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 17, P2: 13
+매칭 성공! RoomId: 5493286ad0754c86b668aeee1669f81a, P1: 17, P2: 13
+유저 접속 해제. ConnectionId: x_hD__wMeNr6TQqIROYVYw
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+유저 등록됨. UserId: 17, ConnectionId: W-iAY7NcIhjv1DimRq3k9A
+유저 접속 해제. ConnectionId: W-iAY7NcIhjv1DimRq3k9A
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: PdJpy1TSgiWpYLtX4sytyA
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: -0RsEOg6XZ9KVNuW24qHJA
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[17]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 17, Player2: 13
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 17, P2: 13
+Player1(bibibi)에게 전송할 데이터: {"RoomId":"c9973d99d70e42cd8636015aa2e508d6","OpponentName":"hihihi","MyPlayerNumber":1,"IsMyTurn":true,"CurrentTurnPlayerId":17}
+Player2(hihihi)에게 전송할 데이터: {"RoomId":"c9973d99d70e42cd8636015aa2e508d6","OpponentName":"bibibi","MyPlayerNumber":2,"IsMyTurn":false,"CurrentTurnPlayerId":17}
+매칭 성공! RoomId: c9973d99d70e42cd8636015aa2e508d6, P1: 17, P2: 13
+유저 접속 해제. ConnectionId: -0RsEOg6XZ9KVNuW24qHJA
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+유저 접속 해제. ConnectionId: PdJpy1TSgiWpYLtX4sytyA
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: L-eNGZ893YH3bLl8maqgRw
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: Zq-eh5wkCAJyfUAAOqWIAA
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[17]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 17, Player2: 13
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 17, P2: 13
+Player1(bibibi)에게 전송할 데이터: {"RoomId":"6acdf1dd488741a19d135e15726ca9e5","OpponentName":"hihihi","MyPlayerNumber":1,"IsMyTurn":true,"CurrentTurnPlayerId":17}
+Player2(hihihi)에게 전송할 데이터: {"RoomId":"6acdf1dd488741a19d135e15726ca9e5","OpponentName":"bibibi","MyPlayerNumber":2,"IsMyTurn":false,"CurrentTurnPlayerId":17}
+매칭 성공! RoomId: 6acdf1dd488741a19d135e15726ca9e5, P1: 17, P2: 13
+유저 접속 해제. ConnectionId: L-eNGZ893YH3bLl8maqgRw
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+유저 접속 해제. ConnectionId: Zq-eh5wkCAJyfUAAOqWIAA
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: qTpr5C5sYQjStBPBrWYfQg
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: NNa6mflDqwlKFVCvzR7TfQ
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[13]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 13, Player2: 17
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 13, P2: 17
+Player1(hihihi)에게 전송할 데이터: {"RoomId":"46c68090d7c34ff19f1bef93238a9274","OpponentName":"bibibi","MyPlayerNumber":1,"IsMyTurn":true,"CurrentTurnPlayerId":13}
+Player2(bibibi)에게 전송할 데이터: {"RoomId":"46c68090d7c34ff19f1bef93238a9274","OpponentName":"hihihi","MyPlayerNumber":2,"IsMyTurn":false,"CurrentTurnPlayerId":13}
+매칭 성공! RoomId: 46c68090d7c34ff19f1bef93238a9274, P1: 13, P2: 17
+유저 접속 해제. ConnectionId: qTpr5C5sYQjStBPBrWYfQg
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: iPoxxBrEdRNT88Rfo12Zaw
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: q0d-_dSf1sYX5m9W4v-qIQ
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[17]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 17, Player2: 13
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 17, P2: 13
+Player1(bibibi)에게 전송할 데이터: {"RoomId":"6ffc526fdc6146319a361ac301f65e87","OpponentName":"hihihi","MyPlayerNumber":1,"IsMyTurn":true,"CurrentTurnPlayerId":17}
+Player2(hihihi)에게 전송할 데이터: {"RoomId":"6ffc526fdc6146319a361ac301f65e87","OpponentName":"bibibi","MyPlayerNumber":2,"IsMyTurn":false,"CurrentTurnPlayerId":17}
+매칭 성공! RoomId: 6ffc526fdc6146319a361ac301f65e87, P1: 17, P2: 13
+StonePlaced 전송. RoomId: 6ffc526fdc6146319a361ac301f65e87, UserId: 17, NextTurn: 13
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 6ffc526fdc6146319a361ac301f65e87, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 6ffc526fdc6146319a361ac301f65e87, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 6ffc526fdc6146319a361ac301f65e87, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 6ffc526fdc6146319a361ac301f65e87, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 6ffc526fdc6146319a361ac301f65e87, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 6ffc526fdc6146319a361ac301f65e87, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 6ffc526fdc6146319a361ac301f65e87, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 6ffc526fdc6146319a361ac301f65e87, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 6ffc526fdc6146319a361ac301f65e87, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 6ffc526fdc6146319a361ac301f65e87, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 6ffc526fdc6146319a361ac301f65e87, UserId: 17
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: ueKBjReUv5tcFlrRHw88Zg
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: E1A0jFa1lvpDi3GNU76jTw
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[13]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 13, Player2: 17
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 13, P2: 17
+Failed writing message. Aborting connection.
+System.NotSupportedException: Serialization and deserialization of 'System.Int32[,]' instances is not supported. Path: $.board.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Int32[,]' instances is not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, Exception innerException)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Serialize(Utf8JsonWriter writer, T& rootValue, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsObject(Utf8JsonWriter writer, Object rootValue)
+   at System.Text.Json.JsonSerializer.Serialize(Utf8JsonWriter writer, Object value, Type inputType, JsonSerializerOptions options)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteArguments(Object[] arguments, Utf8JsonWriter writer)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteInvocationMessage(InvocationMessage message, Utf8JsonWriter writer)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteMessageCore(HubMessage message, IBufferWriter`1 stream)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteMessage(HubMessage message, IBufferWriter`1 output)
+   at Microsoft.AspNetCore.SignalR.Protocol.HubProtocolExtensions.GetMessageBytes(IHubProtocol hubProtocol, HubMessage message)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.GetMessageBytes(HubMessage message)
+   at Microsoft.AspNetCore.SignalR.SerializedHubMessage.GetSerializedMessage(IHubProtocol protocol)
+   at Microsoft.AspNetCore.SignalR.HubConnectionContext.WriteCore(SerializedHubMessage message, CancellationToken cancellationToken)
+Failed writing message. Aborting connection.
+System.NotSupportedException: Serialization and deserialization of 'System.Int32[,]' instances is not supported. Path: $.board.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Int32[,]' instances is not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, Exception innerException)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Serialize(Utf8JsonWriter writer, T& rootValue, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsObject(Utf8JsonWriter writer, Object rootValue)
+   at System.Text.Json.JsonSerializer.Serialize(Utf8JsonWriter writer, Object value, Type inputType, JsonSerializerOptions options)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteArguments(Object[] arguments, Utf8JsonWriter writer)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteInvocationMessage(InvocationMessage message, Utf8JsonWriter writer)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteMessageCore(HubMessage message, IBufferWriter`1 stream)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteMessage(HubMessage message, IBufferWriter`1 output)
+   at Microsoft.AspNetCore.SignalR.Protocol.HubProtocolExtensions.GetMessageBytes(IHubProtocol hubProtocol, HubMessage message)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.GetMessageBytes(HubMessage message)
+   at Microsoft.AspNetCore.SignalR.SerializedHubMessage.GetSerializedMessage(IHubProtocol protocol)
+   at Microsoft.AspNetCore.SignalR.HubConnectionContext.WriteCore(SerializedHubMessage message, CancellationToken cancellationToken)
+매칭 성공! RoomId: d674fc342b844e67bc5756ff6ac279f3, P1: 13, P2: 17
+유저 접속 해제. ConnectionId: E1A0jFa1lvpDi3GNU76jTw
+유저 접속 해제. ConnectionId: ueKBjReUv5tcFlrRHw88Zg
+유저 13가 대기열에서 제거되었습니다.
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+유저 13를 대기열에서 제거했습니다.
+유저 등록됨. UserId: 17, ConnectionId: beVUdA2udCRLQRZXhH4tYQ
+유저 등록됨. UserId: 13, ConnectionId: PH4chYN0vx6cjmntgWqFBQ
+유저 접속 해제. ConnectionId: PH4chYN0vx6cjmntgWqFBQ
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+유저 접속 해제. ConnectionId: beVUdA2udCRLQRZXhH4tYQ
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: vQUBk2k320yfMtjV4GkAww
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: pYHfr6A_O3e4ghVIy12EuA
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[17]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 17, Player2: 13
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 17, P2: 13
+Failed writing message. Aborting connection.
+System.NotSupportedException: Serialization and deserialization of 'System.Int32[,]' instances is not supported. Path: $.board.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Int32[,]' instances is not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, Exception innerException)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Serialize(Utf8JsonWriter writer, T& rootValue, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsObject(Utf8JsonWriter writer, Object rootValue)
+   at System.Text.Json.JsonSerializer.Serialize(Utf8JsonWriter writer, Object value, Type inputType, JsonSerializerOptions options)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteArguments(Object[] arguments, Utf8JsonWriter writer)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteInvocationMessage(InvocationMessage message, Utf8JsonWriter writer)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteMessageCore(HubMessage message, IBufferWriter`1 stream)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteMessage(HubMessage message, IBufferWriter`1 output)
+   at Microsoft.AspNetCore.SignalR.Protocol.HubProtocolExtensions.GetMessageBytes(IHubProtocol hubProtocol, HubMessage message)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.GetMessageBytes(HubMessage message)
+   at Microsoft.AspNetCore.SignalR.SerializedHubMessage.GetSerializedMessage(IHubProtocol protocol)
+   at Microsoft.AspNetCore.SignalR.HubConnectionContext.WriteCore(SerializedHubMessage message, CancellationToken cancellationToken)
+Failed writing message. Aborting connection.
+System.NotSupportedException: Serialization and deserialization of 'System.Int32[,]' instances is not supported. Path: $.board.
+ ---> System.NotSupportedException: Serialization and deserialization of 'System.Int32[,]' instances is not supported.
+   at System.Text.Json.Serialization.Converters.UnsupportedTypeConverter`1.Write(Utf8JsonWriter writer, T value, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ThrowNotSupportedException(WriteStack& state, Exception innerException)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Serialize(Utf8JsonWriter writer, T& rootValue, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsObject(Utf8JsonWriter writer, Object rootValue)
+   at System.Text.Json.JsonSerializer.Serialize(Utf8JsonWriter writer, Object value, Type inputType, JsonSerializerOptions options)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteArguments(Object[] arguments, Utf8JsonWriter writer)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteInvocationMessage(InvocationMessage message, Utf8JsonWriter writer)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteMessageCore(HubMessage message, IBufferWriter`1 stream)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.WriteMessage(HubMessage message, IBufferWriter`1 output)
+   at Microsoft.AspNetCore.SignalR.Protocol.HubProtocolExtensions.GetMessageBytes(IHubProtocol hubProtocol, HubMessage message)
+   at Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.GetMessageBytes(HubMessage message)
+   at Microsoft.AspNetCore.SignalR.SerializedHubMessage.GetSerializedMessage(IHubProtocol protocol)
+   at Microsoft.AspNetCore.SignalR.HubConnectionContext.WriteCore(SerializedHubMessage message, CancellationToken cancellationToken)
+매칭 성공! RoomId: bd13b99dd3c64511893713ca38d78700, P1: 17, P2: 13
+유저 접속 해제. ConnectionId: vQUBk2k320yfMtjV4GkAww
+유저 접속 해제. ConnectionId: pYHfr6A_O3e4ghVIy12EuA
+유저 17가 대기열에서 제거되었습니다.
+유저 13가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+유저 13를 대기열에서 제거했습니다.
+유저 등록됨. UserId: 17, ConnectionId: D31HueTWKSR9kWg3rlQRUQ
+유저 등록됨. UserId: 13, ConnectionId: kXCwa15XfMITJkb_HC-oMQ
+유저 접속 해제. ConnectionId: D31HueTWKSR9kWg3rlQRUQ
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: JRbM6GcVQz8Kh1JUIejsHQ
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: gk7mDX6LFaFqq_XxDHjh6w
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[17]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 17, Player2: 13
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 17, P2: 13
+매칭 성공! RoomId: e63e9702da5d49a0ad328128374e3bfc, P1: 17, P2: 13
+유저 접속 해제. ConnectionId: JRbM6GcVQz8Kh1JUIejsHQ
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+유저 접속 해제. ConnectionId: gk7mDX6LFaFqq_XxDHjh6w
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: ju64ZX_FeOjbNN8QWrXGkA
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: m9k3jIYfpqxyMTThc9iUsg
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[17]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 17, Player2: 13
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 17, P2: 13
+매칭 성공! RoomId: f24341d499914db7ab3292ab39338c60, P1: 17, P2: 13
+유저 접속 해제. ConnectionId: ju64ZX_FeOjbNN8QWrXGkA
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+유저 접속 해제. ConnectionId: m9k3jIYfpqxyMTThc9iUsg
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: 78jcNXG_GIG4MKlzdCRYGw
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: aA6LKhV2T0JX2A_Rf9qbtQ
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[17]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 17, Player2: 13
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 17, P2: 13
+매칭 성공! RoomId: e02592e738434dce868d413daf711bbc, P1: 17, P2: 13
+PlaceStone 요청: RoomId=e02592e738434dce868d413daf711bbc, UserId=17, X=7, Y=4
+GameState 전송: RoomId=e02592e738434dce868d413daf711bbc, CurrentTurn=13
+유저 접속 해제. ConnectionId: 78jcNXG_GIG4MKlzdCRYGw
+유저 13가 대기열에서 제거되었습니다.
+유저 13를 대기열에서 제거했습니다.
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: baN5T9XrTp28V0_MD3ShCQ
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: MSGG87UFWj5Ty7a7GY_onA
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[17]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 17, Player2: 13
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 17, P2: 13
+매칭 성공! RoomId: 8929b4d806b74f59b1dce0322737d154, P1: 17, P2: 13
+PlaceStone 요청: RoomId=8929b4d806b74f59b1dce0322737d154, UserId=17, X=10, Y=3
+GameState 전송: RoomId=8929b4d806b74f59b1dce0322737d154, CurrentTurn=13
+PlaceStone 요청: RoomId=8929b4d806b74f59b1dce0322737d154, UserId=13, X=11, Y=3
+GameState 전송: RoomId=8929b4d806b74f59b1dce0322737d154, CurrentTurn=17
+PlaceStone 요청: RoomId=8929b4d806b74f59b1dce0322737d154, UserId=17, X=10, Y=4
+GameState 전송: RoomId=8929b4d806b74f59b1dce0322737d154, CurrentTurn=13
+PlaceStone 요청: RoomId=8929b4d806b74f59b1dce0322737d154, UserId=13, X=10, Y=5
+GameState 전송: RoomId=8929b4d806b74f59b1dce0322737d154, CurrentTurn=17
+PlaceStone 요청: RoomId=8929b4d806b74f59b1dce0322737d154, UserId=17, X=11, Y=4
+GameState 전송: RoomId=8929b4d806b74f59b1dce0322737d154, CurrentTurn=13
+PlaceStone 요청: RoomId=8929b4d806b74f59b1dce0322737d154, UserId=13, X=11, Y=5
+GameState 전송: RoomId=8929b4d806b74f59b1dce0322737d154, CurrentTurn=17
+PlaceStone 요청: RoomId=8929b4d806b74f59b1dce0322737d154, UserId=17, X=12, Y=4
+GameState 전송: RoomId=8929b4d806b74f59b1dce0322737d154, CurrentTurn=13
+PlaceStone 요청: RoomId=8929b4d806b74f59b1dce0322737d154, UserId=13, X=12, Y=5
+GameState 전송: RoomId=8929b4d806b74f59b1dce0322737d154, CurrentTurn=17
+PlaceStone 요청: RoomId=8929b4d806b74f59b1dce0322737d154, UserId=17, X=13, Y=4
+GameState 전송: RoomId=8929b4d806b74f59b1dce0322737d154, CurrentTurn=13
+PlaceStone 요청: RoomId=8929b4d806b74f59b1dce0322737d154, UserId=13, X=9, Y=4
+GameState 전송: RoomId=8929b4d806b74f59b1dce0322737d154, CurrentTurn=17
+PlaceStone 요청: RoomId=8929b4d806b74f59b1dce0322737d154, UserId=17, X=14, Y=4
+GameState 전송: RoomId=8929b4d806b74f59b1dce0322737d154, CurrentTurn=17
+게임 종료! RoomId: 8929b4d806b74f59b1dce0322737d154, Winner: bibibi
+경기 결과 저장 성공. Winner: 17, Loser: 13
+Now listening on: https://localhost:7224
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+유저 등록됨. UserId: 13, ConnectionId: l-EuEmR0zt6WCJrjXjQLCQ
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+유저 등록됨. UserId: 17, ConnectionId: rOrcoCwq71n8w_HWBJzogg
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 17
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":0,"UsersInQueue":[]}
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 1
+매칭 시도 - 현재 대기인원: 1
+[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...
+[매칭 컨트롤러] - 매칭 요청 수신. UserId: 13
+[매칭 컨트롤러] - 현재 대기열 상태: {"QueueCount":1,"UsersInQueue":[17]}
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 2
+매칭 시도 - 현재 대기인원: 2
+매칭 성공! Player1: 17, Player2: 13
+[매칭 컨트롤러] - 매칭 쌍 발견! P1: 17, P2: 13
+매칭 성공! RoomId: dbef99657a7343c2976892b408e5fa27, P1: 17, P2: 13
+PlaceStone 요청: RoomId=dbef99657a7343c2976892b408e5fa27, UserId=17, X=11, Y=3
+GameState 전송: RoomId=dbef99657a7343c2976892b408e5fa27, CurrentTurn=13
+PlaceStone 요청: RoomId=dbef99657a7343c2976892b408e5fa27, UserId=13, X=12, Y=3
+GameState 전송: RoomId=dbef99657a7343c2976892b408e5fa27, CurrentTurn=17
+PlaceStone 요청: RoomId=dbef99657a7343c2976892b408e5fa27, UserId=17, X=11, Y=4
+GameState 전송: RoomId=dbef99657a7343c2976892b408e5fa27, CurrentTurn=13
+PlaceStone 요청: RoomId=dbef99657a7343c2976892b408e5fa27, UserId=13, X=13, Y=4
+GameState 전송: RoomId=dbef99657a7343c2976892b408e5fa27, CurrentTurn=17
+PlaceStone 요청: RoomId=dbef99657a7343c2976892b408e5fa27, UserId=17, X=11, Y=5
+GameState 전송: RoomId=dbef99657a7343c2976892b408e5fa27, CurrentTurn=13
+PlaceStone 요청: RoomId=dbef99657a7343c2976892b408e5fa27, UserId=13, X=11, Y=6
+GameState 전송: RoomId=dbef99657a7343c2976892b408e5fa27, CurrentTurn=17
+PlaceStone 요청: RoomId=dbef99657a7343c2976892b408e5fa27, UserId=17, X=11, Y=2
+GameState 전송: RoomId=dbef99657a7343c2976892b408e5fa27, CurrentTurn=13
+PlaceStone 요청: RoomId=dbef99657a7343c2976892b408e5fa27, UserId=13, X=9, Y=4
+GameState 전송: RoomId=dbef99657a7343c2976892b408e5fa27, CurrentTurn=17
+PlaceStone 요청: RoomId=dbef99657a7343c2976892b408e5fa27, UserId=17, X=11, Y=1
+GameState 전송: RoomId=dbef99657a7343c2976892b408e5fa27, CurrentTurn=17
+게임 종료! RoomId: dbef99657a7343c2976892b408e5fa27, Winner: bibibi
+경기 결과 저장 성공. Winner: 17, Loser: 13
+유저 접속 해제. ConnectionId: rOrcoCwq71n8w_HWBJzogg
+유저 17가 대기열에서 제거되었습니다.
+유저 17를 대기열에서 제거했습니다.

@@ -38,7 +38,7 @@ namespace OmokServer.Services
         public async Task<bool> RegisterAsync(RegisterRequestDto request)
         {
             var existingUser = await _userRepository.GetByUsernameAsync(request.Username);
-            if (existingUser == null)
+            if (existingUser != null)
             {
                 _logger.LogWarning("[회원가입] - 이미 존재하는 아이디 Username : {Username}", request.Username);
                 return false;

@@ -20,6 +20,17 @@ namespace OmokServer.Services
         }
 
         /// <summary>
+        /// 연결 ID로 사용자 ID를 조회합니다.
+        /// </summary>
+        /// <param name="connectionId">연결 ID</param>
+        /// <returns>사용자 ID (있는 경우)</returns>
+        public int? GetUserIdByConnectionId(string connectionId)
+        {
+            var item = _userConnections.FirstOrDefault(p => p.Value == connectionId);
+            return item.Key != 0 ? item.Key : null;
+        }
+
+        /// <summary>
         /// 연결 ID로 사용자 연결을 제거합니다.
         /// </summary>
         /// <param name="connectionId">제거할 연결 ID</param>
