@@ -1,0 +1,357 @@
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+Failed to determine the https port for redirect.
+[컨트롤러] 회원가입 요청 수신: hihihi
+[회원가입] - 이미 존재하는 아이디 Username : hihihi
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+[SignalR Hub] 새로운 연결. ConnectionId: 5L2z8XTAvUETJATZ52fKNQ
+[SignalR Hub] Register 메서드 호출됨. UserId: 0, ConnectionId: 5L2z8XTAvUETJATZ52fKNQ
+[SignalR Hub] 토큰의 사용자 ID(13)와 요청 사용자 ID(0)가 일치하지 않습니다.
+[매칭 컨트롤러] - 요청 수신. UserId: 13
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+[컨트롤러] 회원가입 요청 수신: bibibi
+[회원가입] - 성공, Username : bibibi
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+[SignalR Hub] 새로운 연결. ConnectionId: MmsxxNR1yvDb9JT_oQx-yw
+[SignalR Hub] Register 메서드 호출됨. UserId: 0, ConnectionId: MmsxxNR1yvDb9JT_oQx-yw
+[SignalR Hub] 토큰의 사용자 ID(17)와 요청 사용자 ID(0)가 일치하지 않습니다.
+[매칭 컨트롤러] - 요청 수신. UserId: 17
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 2
+[연결 관리자] 연결 ID 조회. UserId: 13, ConnectionId: null
+[연결 관리자] 연결 ID 조회. UserId: 17, ConnectionId: null
+매칭되었으나 상대방이 오프라인 상태입니다. 매칭을 취소합니다.
+[매칭 컨트롤러] - 대기열 제거 요청 수신. UserId: 13
+유저 13가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[SignalR Hub] 유저 접속 해제. ConnectionId: 5L2z8XTAvUETJATZ52fKNQ
+유저 13가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[매칭 컨트롤러] - 대기열 제거 요청 수신. UserId: 17
+유저 17가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[SignalR Hub] 유저 접속 해제. ConnectionId: MmsxxNR1yvDb9JT_oQx-yw
+유저 17가 대기열에서 제거되었습니다. 현재 대기인원: 0
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+Failed to determine the https port for redirect.
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+[SignalR Hub] 새로운 연결. ConnectionId: gLkkONAn6MCgzhvA1zY2DA
+[SignalR Hub] Register 메서드 호출됨. UserId: 0, ConnectionId: gLkkONAn6MCgzhvA1zY2DA
+[SignalR Hub] 토큰의 사용자 ID(13)와 요청 사용자 ID(0)가 일치하지 않습니다.
+[매칭 컨트롤러] - 요청 수신. UserId: 13
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+[SignalR Hub] 새로운 연결. ConnectionId: z8i63ldYCCi4KE2h8AlTvA
+[SignalR Hub] Register 메서드 호출됨. UserId: 0, ConnectionId: z8i63ldYCCi4KE2h8AlTvA
+[SignalR Hub] 토큰의 사용자 ID(17)와 요청 사용자 ID(0)가 일치하지 않습니다.
+[매칭 컨트롤러] - 요청 수신. UserId: 17
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 2
+[연결 관리자] 연결 ID 조회. UserId: 13, ConnectionId: null
+[연결 관리자] 연결 ID 조회. UserId: 17, ConnectionId: null
+매칭되었으나 상대방이 오프라인 상태입니다. 매칭을 취소합니다.
+[매칭 컨트롤러] - 대기열 제거 요청 수신. UserId: 13
+유저 13가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[SignalR Hub] 유저 접속 해제. ConnectionId: gLkkONAn6MCgzhvA1zY2DA
+유저 13가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[매칭 컨트롤러] - 대기열 제거 요청 수신. UserId: 17
+유저 17가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[SignalR Hub] 유저 접속 해제. ConnectionId: z8i63ldYCCi4KE2h8AlTvA
+유저 17가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+[SignalR Hub] 새로운 연결. ConnectionId: IUsGd201cnkNYKlZwpvtLg
+[SignalR Hub] Register 메서드 호출됨. UserId: 0, ConnectionId: IUsGd201cnkNYKlZwpvtLg
+[SignalR Hub] 토큰의 사용자 ID(13)와 요청 사용자 ID(0)가 일치하지 않습니다.
+[매칭 컨트롤러] - 요청 수신. UserId: 13
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+[SignalR Hub] 새로운 연결. ConnectionId: 71u3PBYzuw8sAX2XMjMWHQ
+[SignalR Hub] Register 메서드 호출됨. UserId: 0, ConnectionId: 71u3PBYzuw8sAX2XMjMWHQ
+[SignalR Hub] 토큰의 사용자 ID(17)와 요청 사용자 ID(0)가 일치하지 않습니다.
+[매칭 컨트롤러] - 요청 수신. UserId: 17
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 2
+[연결 관리자] 연결 ID 조회. UserId: 13, ConnectionId: null
+[연결 관리자] 연결 ID 조회. UserId: 17, ConnectionId: null
+매칭되었으나 상대방이 오프라인 상태입니다. 매칭을 취소합니다.
+[SignalR Hub] 유저 접속 해제. ConnectionId: IUsGd201cnkNYKlZwpvtLg
+유저 13가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[매칭 컨트롤러] - 대기열 제거 요청 수신. UserId: 17
+유저 17가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[SignalR Hub] 유저 접속 해제. ConnectionId: 71u3PBYzuw8sAX2XMjMWHQ
+유저 17가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+[SignalR Hub] 새로운 연결. ConnectionId: hkxk9OkT1KE6IXFxwPmR8w
+[SignalR Hub] Register 메서드 호출됨. UserId: 13, ConnectionId: hkxk9OkT1KE6IXFxwPmR8w
+[연결 관리자] 사용자 연결 등록됨. UserId: 13, ConnectionId: hkxk9OkT1KE6IXFxwPmR8w, 총 연결 수: 1
+[SignalR Hub] 유저 등록 완료. UserId: 13, ConnectionId: hkxk9OkT1KE6IXFxwPmR8w
+[매칭 컨트롤러] - 요청 수신. UserId: 13
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+[SignalR Hub] 새로운 연결. ConnectionId: v0T8LH7xAkQmjugn26xqmw
+[SignalR Hub] Register 메서드 호출됨. UserId: 17, ConnectionId: v0T8LH7xAkQmjugn26xqmw
+[연결 관리자] 사용자 연결 등록됨. UserId: 17, ConnectionId: v0T8LH7xAkQmjugn26xqmw, 총 연결 수: 2
+[SignalR Hub] 유저 등록 완료. UserId: 17, ConnectionId: v0T8LH7xAkQmjugn26xqmw
+[매칭 컨트롤러] - 요청 수신. UserId: 17
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 2
+[연결 관리자] 연결 ID 조회. UserId: 13, ConnectionId: hkxk9OkT1KE6IXFxwPmR8w
+[연결 관리자] 연결 ID 조회. UserId: 17, ConnectionId: v0T8LH7xAkQmjugn26xqmw
+매칭 성공! RoomId: b5646fea4c594670a029130729030c61, P1: 13, P2: 17
+[SignalR Hub] 유저 접속 해제. ConnectionId: v0T8LH7xAkQmjugn26xqmw
+유저 17가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[연결 관리자] 사용자 연결 제거됨. UserId: 17, ConnectionId: v0T8LH7xAkQmjugn26xqmw, 총 연결 수: 1
+[SignalR Hub] 유저 접속 해제. ConnectionId: hkxk9OkT1KE6IXFxwPmR8w
+유저 13가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[연결 관리자] 사용자 연결 제거됨. UserId: 13, ConnectionId: hkxk9OkT1KE6IXFxwPmR8w, 총 연결 수: 0
+Now listening on: http://localhost:5043
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\clums\Desktop\Study\C#\OmokServer\WebAPI
+Failed to determine the https port for redirect.
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+[SignalR Hub] 새로운 연결. ConnectionId: merpDzW7fG-oQlQnUiHOJQ
+[SignalR Hub] Register 메서드 호출됨. UserId: 13, ConnectionId: merpDzW7fG-oQlQnUiHOJQ
+[연결 관리자] 사용자 연결 등록됨. UserId: 13, ConnectionId: merpDzW7fG-oQlQnUiHOJQ, 총 연결 수: 1
+[SignalR Hub] 유저 등록 완료. UserId: 13, ConnectionId: merpDzW7fG-oQlQnUiHOJQ
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+[SignalR Hub] 새로운 연결. ConnectionId: 2jS27Kc9E0cB984ZOdGtiw
+[SignalR Hub] Register 메서드 호출됨. UserId: 17, ConnectionId: 2jS27Kc9E0cB984ZOdGtiw
+[연결 관리자] 사용자 연결 등록됨. UserId: 17, ConnectionId: 2jS27Kc9E0cB984ZOdGtiw, 총 연결 수: 2
+[SignalR Hub] 유저 등록 완료. UserId: 17, ConnectionId: 2jS27Kc9E0cB984ZOdGtiw
+[매칭 컨트롤러] - 요청 수신. UserId: 13
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+[매칭 컨트롤러] - 대기열 추가 완료. UserId: 13
+[매칭 컨트롤러] - 비동기 매칭 태스크 시작. UserId: 13
+[매칭 컨트롤러] - 매칭 시도 시작. UserId: 13
+[매칭 시도] 현재 대기열 인원: 1
+[매칭 대기] 인원 부족: 1/2
+[매칭 컨트롤러] - 매칭 페어 없음
+[매칭 컨트롤러] - 요청 수신. UserId: 17
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 2
+[매칭 컨트롤러] - 대기열 추가 완료. UserId: 17
+[매칭 컨트롤러] - 비동기 매칭 태스크 시작. UserId: 17
+[매칭 컨트롤러] - 매칭 시도 시작. UserId: 17
+[매칭 시도] 현재 대기열 인원: 2
+[매칭 성공] Player1: 13, Player2: 17
+[매칭 컨트롤러] - 매칭 페어 발견, 처리 시작
+[매칭 처리 시작] Player1: 13, Player2: 17
+[매칭 처리] DB에서 사용자 정보 조회 중
+[매칭 처리] 사용자 정보 조회 성공. P1: hihihi, P2: bibibi
+[매칭 처리] 게임룸 생성 완료. RoomId: 2b98d9db36504d30ba92f1723d534ed9
+[연결 관리자] 연결 ID 조회. UserId: 13, ConnectionId: merpDzW7fG-oQlQnUiHOJQ
+[연결 관리자] 연결 ID 조회. UserId: 17, ConnectionId: 2jS27Kc9E0cB984ZOdGtiw
+[매칭 처리] 연결 ID 조회. P1: merpDzW7fG-oQlQnUiHOJQ, P2: 2jS27Kc9E0cB984ZOdGtiw
+매칭 성공! RoomId: 2b98d9db36504d30ba92f1723d534ed9, P1: 13, P2: 17
+[SignalR Hub] 유저 접속 해제. ConnectionId: merpDzW7fG-oQlQnUiHOJQ
+유저 13가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[연결 관리자] 사용자 연결 제거됨. UserId: 13, ConnectionId: merpDzW7fG-oQlQnUiHOJQ, 총 연결 수: 1
+[SignalR Hub] 유저 접속 해제. ConnectionId: 2jS27Kc9E0cB984ZOdGtiw
+유저 17가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[연결 관리자] 사용자 연결 제거됨. UserId: 17, ConnectionId: 2jS27Kc9E0cB984ZOdGtiw, 총 연결 수: 0
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+[SignalR Hub] 새로운 연결. ConnectionId: W4Slsd0j3hQUorGVV37VtQ
+[SignalR Hub] Register 메서드 호출됨. UserId: 13, ConnectionId: W4Slsd0j3hQUorGVV37VtQ
+[연결 관리자] 사용자 연결 등록됨. UserId: 13, ConnectionId: W4Slsd0j3hQUorGVV37VtQ, 총 연결 수: 1
+[SignalR Hub] 유저 등록 완료. UserId: 13, ConnectionId: W4Slsd0j3hQUorGVV37VtQ
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+[SignalR Hub] 새로운 연결. ConnectionId: EOgh0tFkAbtHYna0u_5FEw
+[SignalR Hub] Register 메서드 호출됨. UserId: 17, ConnectionId: EOgh0tFkAbtHYna0u_5FEw
+[연결 관리자] 사용자 연결 등록됨. UserId: 17, ConnectionId: EOgh0tFkAbtHYna0u_5FEw, 총 연결 수: 2
+[SignalR Hub] 유저 등록 완료. UserId: 17, ConnectionId: EOgh0tFkAbtHYna0u_5FEw
+[매칭 컨트롤러] - 요청 수신. UserId: 13
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+[매칭 컨트롤러] - 대기열 추가 완료. UserId: 13
+[매칭 컨트롤러] - 비동기 매칭 태스크 시작. UserId: 13
+[매칭 컨트롤러] - 매칭 시도 시작. UserId: 13
+[매칭 시도] 현재 대기열 인원: 1
+[매칭 대기] 인원 부족: 1/2
+[매칭 컨트롤러] - 매칭 페어 없음
+[매칭 컨트롤러] - 요청 수신. UserId: 17
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 2
+[매칭 컨트롤러] - 대기열 추가 완료. UserId: 17
+[매칭 컨트롤러] - 비동기 매칭 태스크 시작. UserId: 17
+[매칭 컨트롤러] - 매칭 시도 시작. UserId: 17
+[매칭 시도] 현재 대기열 인원: 2
+[매칭 성공] Player1: 13, Player2: 17
+[매칭 컨트롤러] - 매칭 페어 발견, 처리 시작
+[매칭 처리 시작] Player1: 13, Player2: 17
+[매칭 처리] DB에서 사용자 정보 조회 중
+[매칭 처리] 사용자 정보 조회 성공. P1: hihihi, P2: bibibi
+[매칭 처리] 게임룸 생성 완료. RoomId: 6e3a8d3b2e724452a2ab9eed498b39d4
+[연결 관리자] 연결 ID 조회. UserId: 13, ConnectionId: W4Slsd0j3hQUorGVV37VtQ
+[연결 관리자] 연결 ID 조회. UserId: 17, ConnectionId: EOgh0tFkAbtHYna0u_5FEw
+[매칭 처리] 연결 ID 조회. P1: W4Slsd0j3hQUorGVV37VtQ, P2: EOgh0tFkAbtHYna0u_5FEw
+매칭 성공! RoomId: 6e3a8d3b2e724452a2ab9eed498b39d4, P1: 13, P2: 17
+[SignalR Hub] 유저 접속 해제. ConnectionId: W4Slsd0j3hQUorGVV37VtQ
+유저 13가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[연결 관리자] 사용자 연결 제거됨. UserId: 13, ConnectionId: W4Slsd0j3hQUorGVV37VtQ, 총 연결 수: 1
+[SignalR Hub] 유저 접속 해제. ConnectionId: EOgh0tFkAbtHYna0u_5FEw
+유저 17가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[연결 관리자] 사용자 연결 제거됨. UserId: 17, ConnectionId: EOgh0tFkAbtHYna0u_5FEw, 총 연결 수: 0
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+[SignalR Hub] 새로운 연결. ConnectionId: PYLSCe39odLXH8Kz8PxDhg
+[SignalR Hub] Register 메서드 호출됨. UserId: 13, ConnectionId: PYLSCe39odLXH8Kz8PxDhg
+[연결 관리자] 사용자 연결 등록됨. UserId: 13, ConnectionId: PYLSCe39odLXH8Kz8PxDhg, 총 연결 수: 1
+[SignalR Hub] 유저 등록 완료. UserId: 13, ConnectionId: PYLSCe39odLXH8Kz8PxDhg
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+[SignalR Hub] 새로운 연결. ConnectionId: 1XWe9HGFu0uwg5txungkJg
+[SignalR Hub] Register 메서드 호출됨. UserId: 17, ConnectionId: 1XWe9HGFu0uwg5txungkJg
+[연결 관리자] 사용자 연결 등록됨. UserId: 17, ConnectionId: 1XWe9HGFu0uwg5txungkJg, 총 연결 수: 2
+[SignalR Hub] 유저 등록 완료. UserId: 17, ConnectionId: 1XWe9HGFu0uwg5txungkJg
+[매칭 컨트롤러] - 요청 수신. UserId: 13
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 1
+[매칭 컨트롤러] - 대기열 추가 완료. UserId: 13
+[매칭 컨트롤러] - 비동기 매칭 태스크 시작. UserId: 13
+[매칭 컨트롤러] - 매칭 시도 시작. UserId: 13
+[매칭 시도] 현재 대기열 인원: 1
+[매칭 대기] 인원 부족: 1/2
+[매칭 컨트롤러] - 매칭 페어 없음
+[매칭 컨트롤러] - 요청 수신. UserId: 17
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 2
+[매칭 컨트롤러] - 대기열 추가 완료. UserId: 17
+[매칭 컨트롤러] - 비동기 매칭 태스크 시작. UserId: 17
+[매칭 컨트롤러] - 매칭 시도 시작. UserId: 17
+[매칭 시도] 현재 대기열 인원: 2
+[매칭 성공] Player1: 13, Player2: 17
+[매칭 컨트롤러] - 매칭 페어 발견, 처리 시작
+[매칭 처리 시작] Player1: 13, Player2: 17
+[매칭 처리] DB에서 사용자 정보 조회 중
+[매칭 처리] 사용자 정보 조회 성공. P1: hihihi, P2: bibibi
+[매칭 처리] 게임룸 생성 완료. RoomId: db263f56489f45ceb7d749acaec507df
+[연결 관리자] 연결 ID 조회. UserId: 13, ConnectionId: PYLSCe39odLXH8Kz8PxDhg
+[연결 관리자] 연결 ID 조회. UserId: 17, ConnectionId: 1XWe9HGFu0uwg5txungkJg
+[매칭 처리] 연결 ID 조회. P1: PYLSCe39odLXH8Kz8PxDhg, P2: 1XWe9HGFu0uwg5txungkJg
+매칭 성공! RoomId: db263f56489f45ceb7d749acaec507df, P1: 13, P2: 17
+StonePlaced 전송. RoomId: db263f56489f45ceb7d749acaec507df, UserId: 13
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: db263f56489f45ceb7d749acaec507df, UserId: 13
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: db263f56489f45ceb7d749acaec507df, UserId: 13
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: db263f56489f45ceb7d749acaec507df, UserId: 13
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: db263f56489f45ceb7d749acaec507df, UserId: 13
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: db263f56489f45ceb7d749acaec507df, UserId: 13
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: db263f56489f45ceb7d749acaec507df, UserId: 13
+[SignalR Hub] 유저 접속 해제. ConnectionId: PYLSCe39odLXH8Kz8PxDhg
+유저 13가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[연결 관리자] 사용자 연결 제거됨. UserId: 13, ConnectionId: PYLSCe39odLXH8Kz8PxDhg, 총 연결 수: 1
+[SignalR Hub] 유저 접속 해제. ConnectionId: 1XWe9HGFu0uwg5txungkJg
+유저 17가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[연결 관리자] 사용자 연결 제거됨. UserId: 17, ConnectionId: 1XWe9HGFu0uwg5txungkJg, 총 연결 수: 0
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+[SignalR Hub] 새로운 연결. ConnectionId: SaAd4tAxVOXaVtSBGYVoEg
+[SignalR Hub] Register 메서드 호출됨. UserId: 13, ConnectionId: SaAd4tAxVOXaVtSBGYVoEg
+[연결 관리자] 사용자 연결 등록됨. UserId: 13, ConnectionId: SaAd4tAxVOXaVtSBGYVoEg, 총 연결 수: 1
+[SignalR Hub] 유저 등록 완료. UserId: 13, ConnectionId: SaAd4tAxVOXaVtSBGYVoEg
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+[SignalR Hub] 새로운 연결. ConnectionId: Jnzwo4wVZO4jaTPsR0SLsg
+[SignalR Hub] Register 메서드 호출됨. UserId: 17, ConnectionId: Jnzwo4wVZO4jaTPsR0SLsg
+[연결 관리자] 사용자 연결 등록됨. UserId: 17, ConnectionId: Jnzwo4wVZO4jaTPsR0SLsg, 총 연결 수: 2
+[SignalR Hub] 유저 등록 완료. UserId: 17, ConnectionId: Jnzwo4wVZO4jaTPsR0SLsg
+[매칭 컨트롤러] - 요청 수신. UserId: 17
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 1
+[매칭 컨트롤러] - 대기열 추가 완료. UserId: 17
+[매칭 컨트롤러] - 비동기 매칭 태스크 시작. UserId: 17
+[매칭 컨트롤러] - 매칭 시도 시작. UserId: 17
+[매칭 시도] 현재 대기열 인원: 1
+[매칭 대기] 인원 부족: 1/2
+[매칭 컨트롤러] - 매칭 페어 없음
+[매칭 컨트롤러] - 요청 수신. UserId: 13
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 2
+[매칭 컨트롤러] - 대기열 추가 완료. UserId: 13
+[매칭 컨트롤러] - 비동기 매칭 태스크 시작. UserId: 13
+[매칭 컨트롤러] - 매칭 시도 시작. UserId: 13
+[매칭 시도] 현재 대기열 인원: 2
+[매칭 성공] Player1: 17, Player2: 13
+[매칭 컨트롤러] - 매칭 페어 발견, 처리 시작
+[매칭 처리 시작] Player1: 17, Player2: 13
+[매칭 처리] DB에서 사용자 정보 조회 중
+[매칭 처리] 사용자 정보 조회 성공. P1: bibibi, P2: hihihi
+[매칭 처리] 게임룸 생성 완료. RoomId: 40eedb731e134f4c8feee0c77830928e
+[연결 관리자] 연결 ID 조회. UserId: 17, ConnectionId: Jnzwo4wVZO4jaTPsR0SLsg
+[연결 관리자] 연결 ID 조회. UserId: 13, ConnectionId: SaAd4tAxVOXaVtSBGYVoEg
+[매칭 처리] 연결 ID 조회. P1: Jnzwo4wVZO4jaTPsR0SLsg, P2: SaAd4tAxVOXaVtSBGYVoEg
+매칭 성공! RoomId: 40eedb731e134f4c8feee0c77830928e, P1: 17, P2: 13
+StonePlaced 전송. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+PlaceStone: 돌을 놓는 데 실패했습니다. RoomId: 40eedb731e134f4c8feee0c77830928e, UserId: 17
+[SignalR Hub] 유저 접속 해제. ConnectionId: Jnzwo4wVZO4jaTPsR0SLsg
+유저 17가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[연결 관리자] 사용자 연결 제거됨. UserId: 17, ConnectionId: Jnzwo4wVZO4jaTPsR0SLsg, 총 연결 수: 1
+[SignalR Hub] 유저 접속 해제. ConnectionId: SaAd4tAxVOXaVtSBGYVoEg
+유저 13가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[연결 관리자] 사용자 연결 제거됨. UserId: 13, ConnectionId: SaAd4tAxVOXaVtSBGYVoEg, 총 연결 수: 0
+[컨트롤러] 로그인 요청 수신: hihihi
+[로그인 서비스] - 로그인 성공, Username: hihihi
+[SignalR Hub] 새로운 연결. ConnectionId: LT-Xx0G93OnlQVa4pJe1jA
+[SignalR Hub] Register 메서드 호출됨. UserId: 13, ConnectionId: LT-Xx0G93OnlQVa4pJe1jA
+[연결 관리자] 사용자 연결 등록됨. UserId: 13, ConnectionId: LT-Xx0G93OnlQVa4pJe1jA, 총 연결 수: 1
+[SignalR Hub] 유저 등록 완료. UserId: 13, ConnectionId: LT-Xx0G93OnlQVa4pJe1jA
+[컨트롤러] 로그인 요청 수신: bibibi
+[로그인 서비스] - 로그인 성공, Username: bibibi
+[SignalR Hub] 새로운 연결. ConnectionId: JFAvnys1mCc4TCZSeBUAtQ
+[SignalR Hub] Register 메서드 호출됨. UserId: 17, ConnectionId: JFAvnys1mCc4TCZSeBUAtQ
+[연결 관리자] 사용자 연결 등록됨. UserId: 17, ConnectionId: JFAvnys1mCc4TCZSeBUAtQ, 총 연결 수: 2
+[SignalR Hub] 유저 등록 완료. UserId: 17, ConnectionId: JFAvnys1mCc4TCZSeBUAtQ
+[매칭 컨트롤러] - 요청 수신. UserId: 17
+유저 17가 대기열에 추가되었습니다. 현재 대기인원: 1
+[매칭 컨트롤러] - 대기열 추가 완료. UserId: 17
+[매칭 컨트롤러] - 비동기 매칭 태스크 시작. UserId: 17
+[매칭 컨트롤러] - 매칭 시도 시작. UserId: 17
+[매칭 시도] 현재 대기열 인원: 1
+[매칭 대기] 인원 부족: 1/2
+[매칭 컨트롤러] - 매칭 페어 없음
+[매칭 컨트롤러] - 요청 수신. UserId: 13
+유저 13가 대기열에 추가되었습니다. 현재 대기인원: 2
+[매칭 컨트롤러] - 대기열 추가 완료. UserId: 13
+[매칭 컨트롤러] - 비동기 매칭 태스크 시작. UserId: 13
+[매칭 컨트롤러] - 매칭 시도 시작. UserId: 13
+[매칭 시도] 현재 대기열 인원: 2
+[매칭 성공] Player1: 17, Player2: 13
+[매칭 컨트롤러] - 매칭 페어 발견, 처리 시작
+[매칭 처리 시작] Player1: 17, Player2: 13
+[매칭 처리] DB에서 사용자 정보 조회 중
+[매칭 처리] 사용자 정보 조회 성공. P1: bibibi, P2: hihihi
+[매칭 처리] 게임룸 생성 완료. RoomId: 8636d9e4639e41baaf82b3d02a7a69b2
+[연결 관리자] 연결 ID 조회. UserId: 17, ConnectionId: JFAvnys1mCc4TCZSeBUAtQ
+[연결 관리자] 연결 ID 조회. UserId: 13, ConnectionId: LT-Xx0G93OnlQVa4pJe1jA
+[매칭 처리] 연결 ID 조회. P1: JFAvnys1mCc4TCZSeBUAtQ, P2: LT-Xx0G93OnlQVa4pJe1jA
+매칭 성공! RoomId: 8636d9e4639e41baaf82b3d02a7a69b2, P1: 17, P2: 13
+StonePlaced 전송. RoomId: 8636d9e4639e41baaf82b3d02a7a69b2, UserId: 17
+[SignalR Hub] 유저 접속 해제. ConnectionId: JFAvnys1mCc4TCZSeBUAtQ
+유저 17가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[연결 관리자] 사용자 연결 제거됨. UserId: 17, ConnectionId: JFAvnys1mCc4TCZSeBUAtQ, 총 연결 수: 1
+[SignalR Hub] 유저 접속 해제. ConnectionId: LT-Xx0G93OnlQVa4pJe1jA
+유저 13가 대기열에서 제거되었습니다. 현재 대기인원: 0
+[연결 관리자] 사용자 연결 제거됨. UserId: 13, ConnectionId: LT-Xx0G93OnlQVa4pJe1jA, 총 연결 수: 0

@@ -54,6 +54,23 @@ namespace OmokServer
                         ValidAudience = builder.Configuration["Jwt:Audience"],
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]))
                     };
+                    
+                    // SignalR에서 JWT 토큰 처리를 위한 이벤트 설정
+                    options.Events = new JwtBearerEvents
+                    {
+                        OnMessageReceived = context =>
+                        {
+                            var accessToken = context.Request.Query["access_token"];
+                            
+                            // SignalR 허브로의 요청인 경우 쿼리스트링에서 토큰을 가져옴
+                            var path = context.HttpContext.Request.Path;
+                            if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/gamehub"))
+                            {
+                                context.Token = accessToken;
+                            }
+                            return Task.CompletedTask;
+                        }
+                    };
                 });
             // Repository 등록
             builder.Services.AddScoped<IUserRepository, UserRepository>();
@@ -65,9 +82,31 @@ namespace OmokServer
             builder.Services.AddScoped<IMatchHistoryService, MatchHistoryService>();
             builder.Services.AddSingleton<GameRoomManager>();
             builder.Services.AddSingleton<MatchmakingService>();
-            // SignalR 설정
-            builder.Services.AddSignalR();
+            // SignalR 설정 - CORS 지원
+            builder.Services.AddSignalR(options =>
+            {
+                options.EnableDetailedErrors = true; // 개발 환경에서 자세한 에러 메시지
+            });
             builder.Services.AddSingleton<UserConnectionManager>();
+            // CORS 설정 - 클라이언트에서 서버로의 요청을 허용
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowWebClient", policy =>
+                {
+                    policy.WithOrigins(
+                            "http://localhost:8080",    // Python 웹 서버
+                            "http://127.0.0.1:8080",    // 로컬 IP
+                            "http://localhost:3000",    // 기타 개발 서버
+                            "http://127.0.0.1:3000",
+                            "null"                      // file:// 프로토콜 (브라우저에서 직접 열 때)
+                          )
+                          .AllowAnyHeader()             // 모든 HTTP 헤더 허용
+                          .AllowAnyMethod()             // GET, POST, PUT, DELETE 등 모든 메서드 허용
+                          .AllowCredentials()           // 쿠키, 인증 헤더 허용
+                          .SetIsOriginAllowed(origin => true); // 개발 환경에서 모든 origin 허용
+                });
+            });
+
             // Add services to the container.
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -117,13 +156,20 @@ namespace OmokServer
             }
 
             // 미들웨어 설정
-            app.UseHttpsRedirection();
+            app.UseCors("AllowWebClient");
+            
+            // 개발 환경에서는 HTTPS 리다이렉션 비활성화
+            if (!app.Environment.IsDevelopment())
+            {
+                app.UseHttpsRedirection();
+            }
+            
             app.UseAuthentication();
             app.UseAuthorization();
 
             // 엔드포인트 설정
             app.MapControllers();
-            app.MapHub<OmokServer.Hubs.GameHub>("/gamehub");
+            app.MapHub<OmokServer.Hubs.GameHub>("/gamehub").RequireCors("AllowWebClient");
             app.Run();
         }
     }

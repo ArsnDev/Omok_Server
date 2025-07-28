@@ -38,16 +38,26 @@ namespace OmokServer.Controllers
 
             var userId = int.Parse(userIdString);
 
-            _logger.ZLogInformation($"[매칭 컨트롤러] - 요청 수신. UserId: {userId}");
+            _logger.ZLogInformation($"[매칭 컨트롤러] - 매칭 요청 수신. UserId: {userId}");
+
+            // 현재 대기열 상태 로그
+            var queueStatus = _matchmakingService.GetQueueStatus();
+            _logger.ZLogInformation($"[매칭 컨트롤러] - 현재 대기열 상태: {System.Text.Json.JsonSerializer.Serialize(queueStatus)}");
 
             _matchmakingService.AddToQueue(userId);
 
             var matchedPair = _matchmakingService.TryGetMatchedPair();
             if (matchedPair.HasValue)
             {
+                _logger.ZLogInformation($"[매칭 컨트롤러] - 매칭 쌍 발견! P1: {matchedPair.Value.Player1}, P2: {matchedPair.Value.Player2}");
                 await _matchmakingService.ProcessMatchAsync(matchedPair.Value.Player1, matchedPair.Value.Player2);
+                return Ok(new { message = "매칭이 완료되었습니다!" });
             }
-            return Ok(new { message = "대기열에 등록되었거나 매칭 처리 중입니다." });
+            else
+            {
+                _logger.ZLogInformation($"[매칭 컨트롤러] - 매칭 상대를 찾지 못함. 대기열에서 대기 중...");
+                return Ok(new { message = "대기열에 등록되었습니다. 상대방을 찾는 중..." });
+            }
         }
     }
 }
